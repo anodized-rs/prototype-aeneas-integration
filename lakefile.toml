@@ -1,0 +1,17 @@
+name = "AeneasIntegration"
+defaultTargets = ["examples"]
+
+[leanOptions]
+linter.style.nameCheck = false
+
+[[require]]
+name = "aeneas"
+git = "https://github.com/AeneasVerif/aeneas.git"
+subDir = "backends/lean"
+rev = "fa699427cdfa8f604b891fb0223ef42883dd7dc4"
+
+[[lean_lib]]
+name = "examples"
+
+[[lean_lib]]
+name = "Proofs"

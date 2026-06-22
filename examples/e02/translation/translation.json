@@ -1,0 +1,473 @@
+{
+  "aeneas_version": "fa699427",
+  "charon_version": "0.1.216",
+  "crate": "e02",
+  "files": {
+    "dest_dir": "/mnt/projects/Verification/prototype-aeneas-integration",
+    "llbc_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/e02.llbc",
+    "lean_files": [
+      "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/TypesExternal.lean",
+      "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Types.lean",
+      "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/FunsExternal.lean",
+      "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean"
+    ]
+  },
+  "functions": [
+    {
+      "def_id": 10,
+      "lean_name": "e02.anodized_logic.arithmetic.int.Insts.CoreOpsArithAddI32int.add",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/FunsExternal.lean",
+      "rust_name": "anodized_logic::arithmetic::{impl core::ops::arith::Add<i32, anodized_logic::arithmetic::int> for anodized_logic::arithmetic::int}::add",
+      "is_local": false,
+      "source": {
+        "file": "/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic/interop.rs",
+        "begin_line": 75,
+        "end_line": 75
+      },
+      "is_opaque": true,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 8,
+      "lean_name": "e02.Shared0int.Insts.CoreOpsArithDivI32int.div",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/FunsExternal.lean",
+      "rust_name": "anodized_logic::arithmetic::{impl core::ops::arith::Div<i32, anodized_logic::arithmetic::int> for &'_0 anodized_logic::arithmetic::int}::div",
+      "is_local": false,
+      "source": {
+        "file": "/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic/interop.rs",
+        "begin_line": 151,
+        "end_line": 151
+      },
+      "is_opaque": true,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 6,
+      "lean_name": "e02.Shared0int.Insts.CoreOpsArithRemI32int.rem",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/FunsExternal.lean",
+      "rust_name": "anodized_logic::arithmetic::{impl core::ops::arith::Rem<i32, anodized_logic::arithmetic::int> for &'_0 anodized_logic::arithmetic::int}::rem",
+      "is_local": false,
+      "source": {
+        "file": "/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic/interop.rs",
+        "begin_line": 160,
+        "end_line": 160
+      },
+      "is_opaque": true,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 9,
+      "lean_name": "e02.I32.Insts.CoreOpsArithMulShared0intint.mul",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/FunsExternal.lean",
+      "rust_name": "anodized_logic::arithmetic::{impl core::ops::arith::Mul<&'_0 anodized_logic::arithmetic::int, anodized_logic::arithmetic::int> for i32}::mul",
+      "is_local": false,
+      "source": {
+        "file": "/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic/interop.rs",
+        "begin_line": 187,
+        "end_line": 187
+      },
+      "is_opaque": true,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 7,
+      "lean_name": "e02.anodized_logic.arithmetic.int.Insts.CoreCmpPartialEqI32.eq",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/FunsExternal.lean",
+      "rust_name": "anodized_logic::arithmetic::{impl core::cmp::PartialEq<i32> for anodized_logic::arithmetic::int}::eq",
+      "is_local": false,
+      "source": {
+        "file": "/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic/interop.rs",
+        "begin_line": 223,
+        "end_line": 223
+      },
+      "is_opaque": true,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 33,
+      "lean_name": "e02.anodized_logic.arithmetic.int.Insts.CoreCmpPartialOrdI32.gt",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/FunsExternal.lean",
+      "rust_name": "anodized_logic::arithmetic::{impl core::cmp::PartialOrd<i32> for anodized_logic::arithmetic::int}::gt",
+      "is_local": false,
+      "source": {
+        "file": "/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic/interop.rs",
+        "begin_line": 239,
+        "end_line": 239
+      },
+      "is_opaque": true,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 13,
+      "lean_name": "e02.__anodized_fn_requires_collatz.closure.Insts.CoreOpsFunctionFnTupleBool.call",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::__anodized_fn_requires_collatz::{impl core::ops::function::Fn<(), bool> for e02::__anodized_fn_requires_collatz::closure<'_0>}::call",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 12,
+      "lean_name": "e02.__anodized_fn_requires_collatz.closure.Insts.CoreOpsFunctionFnMutTupleBool.call_mut",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::__anodized_fn_requires_collatz::{impl core::ops::function::FnMut<(), bool> for e02::__anodized_fn_requires_collatz::closure<'_0>}::call_mut",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 11,
+      "lean_name": "e02.__anodized_fn_requires_collatz.closure.Insts.CoreOpsFunctionFnOnceTupleBool.call_once",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::__anodized_fn_requires_collatz::{impl core::ops::function::FnOnce<(), bool> for e02::__anodized_fn_requires_collatz::closure<'_0>}::call_once",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 17,
+      "lean_name": "e02.__anodized_fn_ensures_collatz.closure.Insts.CoreOpsFunctionFnTupleSharedintBool.call",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::__anodized_fn_ensures_collatz::{impl core::ops::function::Fn<(&'_ anodized_logic::arithmetic::int,), bool> for e02::__anodized_fn_ensures_collatz::closure}::call",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 16,
+      "lean_name": "e02.__anodized_fn_ensures_collatz.closure.Insts.CoreOpsFunctionFnMutTupleSharedintBool.call_mut",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::__anodized_fn_ensures_collatz::{impl core::ops::function::FnMut<(&'_ anodized_logic::arithmetic::int,), bool> for e02::__anodized_fn_ensures_collatz::closure}::call_mut",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 15,
+      "lean_name": "e02.__anodized_fn_ensures_collatz.closure.Insts.CoreOpsFunctionFnOnceTupleSharedintBool.call_once",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::__anodized_fn_ensures_collatz::{impl core::ops::function::FnOnce<(&'_ anodized_logic::arithmetic::int,), bool> for e02::__anodized_fn_ensures_collatz::closure}::call_once",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 0,
+      "lean_name": "e02.__anodized_fn_requires_collatz",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::__anodized_fn_requires_collatz",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 1,
+      "lean_name": "e02.__anodized_fn_ensures_collatz",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::__anodized_fn_ensures_collatz",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 3,
+      "lean_name": "e02.f",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::f",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 15,
+        "end_line": 21
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 2,
+      "lean_name": "e02.collatz_loop.body",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::collatz",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 0,
+        "end_line": 11
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": true,
+      "is_rec": false,
+      "reducible": false,
+      "loop": { "id": 0, "pos": [ 0 ], "is_body": true },
+      "parent_lean_name": "e02.collatz"
+    },
+    {
+      "def_id": 2,
+      "lean_name": "e02.collatz_loop",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::collatz",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 0,
+        "end_line": 11
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": true,
+      "is_rec": false,
+      "reducible": false,
+      "loop": { "id": 0, "pos": [ 0 ], "is_body": false },
+      "parent_lean_name": "e02.collatz"
+    },
+    {
+      "def_id": 2,
+      "lean_name": "e02.collatz",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::collatz",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 8,
+        "end_line": 13
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": true,
+      "is_rec": false,
+      "reducible": true
+    }
+  ],
+  "types": [
+    {
+      "def_id": 0,
+      "lean_name": "e02.anodized_logic.arithmetic.int",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/TypesExternal.lean",
+      "rust_name": "anodized_logic::arithmetic::int",
+      "is_local": false,
+      "source": {
+        "file": "/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic.rs",
+        "begin_line": 6,
+        "end_line": 6
+      }
+    },
+    {
+      "def_id": 1,
+      "lean_name": "e02.__anodized_fn_requires_collatz.closure",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Types.lean",
+      "rust_name": "e02::__anodized_fn_requires_collatz::closure",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      }
+    },
+    {
+      "def_id": 2,
+      "lean_name": "e02.__anodized_fn_ensures_collatz.closure",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Types.lean",
+      "rust_name": "e02::__anodized_fn_ensures_collatz::closure",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      }
+    }
+  ],
+  "globals": [
+    {
+      "def_id": 0,
+      "lean_name": "e02.__anodized_fn_qualifiers_collatz",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::__anodized_fn_qualifiers_collatz",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      },
+      "can_fail": false
+    }
+  ],
+  "trait_decls": [],
+  "trait_impls": [
+    {
+      "def_id": 0,
+      "lean_name": "e02.__anodized_fn_requires_collatz.closure.Insts.CoreOpsFunctionFnOnceTupleBool",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::__anodized_fn_requires_collatz::{impl core::ops::function::FnOnce<(), bool> for e02::__anodized_fn_requires_collatz::closure<'_0>}",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      },
+      "impl_trait_def_id": 3,
+      "impl_trait_rust_name": "core::ops::function::FnOnce",
+      "impl_trait_is_builtin": true
+    },
+    {
+      "def_id": 1,
+      "lean_name": "e02.__anodized_fn_requires_collatz.closure.Insts.CoreOpsFunctionFnMutTupleBool",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::__anodized_fn_requires_collatz::{impl core::ops::function::FnMut<(), bool> for e02::__anodized_fn_requires_collatz::closure<'_0>}",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      },
+      "impl_trait_def_id": 4,
+      "impl_trait_rust_name": "core::ops::function::FnMut",
+      "impl_trait_is_builtin": true
+    },
+    {
+      "def_id": 2,
+      "lean_name": "e02.__anodized_fn_requires_collatz.closure.Insts.CoreOpsFunctionFnTupleBool",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::__anodized_fn_requires_collatz::{impl core::ops::function::Fn<(), bool> for e02::__anodized_fn_requires_collatz::closure<'_0>}",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      },
+      "impl_trait_def_id": 0,
+      "impl_trait_rust_name": "core::ops::function::Fn",
+      "impl_trait_is_builtin": true
+    },
+    {
+      "def_id": 4,
+      "lean_name": "e02.__anodized_fn_ensures_collatz.closure.Insts.CoreOpsFunctionFnOnceTupleSharedintBool",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::__anodized_fn_ensures_collatz::{impl core::ops::function::FnOnce<(&'_ anodized_logic::arithmetic::int,), bool> for e02::__anodized_fn_ensures_collatz::closure}",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      },
+      "impl_trait_def_id": 3,
+      "impl_trait_rust_name": "core::ops::function::FnOnce",
+      "impl_trait_is_builtin": true
+    },
+    {
+      "def_id": 5,
+      "lean_name": "e02.__anodized_fn_ensures_collatz.closure.Insts.CoreOpsFunctionFnMutTupleSharedintBool",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::__anodized_fn_ensures_collatz::{impl core::ops::function::FnMut<(&'_ anodized_logic::arithmetic::int,), bool> for e02::__anodized_fn_ensures_collatz::closure}",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      },
+      "impl_trait_def_id": 4,
+      "impl_trait_rust_name": "core::ops::function::FnMut",
+      "impl_trait_is_builtin": true
+    },
+    {
+      "def_id": 6,
+      "lean_name": "e02.__anodized_fn_ensures_collatz.closure.Insts.CoreOpsFunctionFnTupleSharedintBool",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e02/translation/Funs.lean",
+      "rust_name": "e02::__anodized_fn_ensures_collatz::{impl core::ops::function::Fn<(&'_ anodized_logic::arithmetic::int,), bool> for e02::__anodized_fn_ensures_collatz::closure}",
+      "is_local": true,
+      "source": {
+        "file": "examples/e02/src/lib.rs",
+        "begin_line": 4,
+        "end_line": 7
+      },
+      "impl_trait_def_id": 0,
+      "impl_trait_rust_name": "core::ops::function::Fn",
+      "impl_trait_is_builtin": true
+    }
+  ]
+}

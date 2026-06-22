@@ -1,0 +1,9 @@
+# Aeneas extraction configuration.
+#
+# Pins the Charon/Aeneas toolchain that `npm run aeneas-install` clones and builds.
+# Keep `commit` in sync with the `rev` in lakefile.toml's aeneas [[require]] block so the
+# built binary and the Lean backend library agree.
+
+aeneas:
+  commit: "fa699427cdfa8f604b891fb0223ef42883dd7dc4"
+  repo: "https://github.com/AeneasVerif/aeneas.git"

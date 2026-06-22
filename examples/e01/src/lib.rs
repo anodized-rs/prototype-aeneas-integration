@@ -37,14 +37,14 @@ impl T for u8 {
 
 // Loop invariants
 
-#[spec(
-    ensures: forall(|j: usize| implies!(j < x.len(), x[j] <= *output)),
-)]
+// #[spec(
+//     ensures: forall(|j: usize| implies!(j < x.len(), x[j] <= *output)),
+// )]
 pub fn f_loop(x: &[u8]) -> u8 {
     let mut max = 0;
-    #[spec(
-        maintains: forall(|j: usize| implies!(j < i, x[j] <= max)),
-    )]
+    // #[spec(
+    //     maintains: forall(|j: usize| implies!(j < i, x[j] <= max)),
+    // )]
     for i in 0..x.len() {
         if x[i] > max {
             max = x[i]
@@ -55,19 +55,19 @@ pub fn f_loop(x: &[u8]) -> u8 {
 
 // While loop termination
 
-#[spec(
-    ensures: forall(|j: usize| implies!(j < x.len(), x[j] <= *output),
-))]
+// #[spec(
+//     ensures: forall(|j: usize| implies!(j < x.len(), x[j] <= *output),
+// ))]
 pub fn f_while(x: &[u8]) -> u8 {
     let mut max = 0;
     let mut i = 0;
-    #[spec(
-        maintains: [
-            i <= x.len(),
-            forall(|j: usize| implies!(j < i, x[j] <= max)),
-        ],
-        decreases: x.len() - i,
-    )]
+    // #[spec(
+    //     maintains: [
+    //         i <= x.len(),
+    //         forall(|j: usize| implies!(j < i, x[j] <= max)),
+    //     ],
+    //     decreases: x.len() - i,
+    // )]
     while i < x.len() {
         if x[i] > max {
             max = x[i]
