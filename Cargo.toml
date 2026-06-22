@@ -6,4 +6,7 @@ members = [
 ]
 
 [workspace.dependencies]
-anodized = "0.5.1"
+anodized = {
+    git = "https://github.com/anodized-rs/anodized.git",
+    branch = "feat-aeneas-integration",
+}

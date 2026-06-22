@@ -5,8 +5,7 @@ version = 4
 [[package]]
 name = "anodized"
 version = "0.5.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "76be0784ccd6185d62569cc96d018d725ea14b549aace4ab9debbfe3556465a6"
+source = "git+https://github.com/anodized-rs/anodized.git?branch=feat-aeneas-integration#f7e8e56e43281130ad9ffbcc9a9313f266726e4d"
 dependencies = [
  "anodized-logic",
  "anodized-macros",
@@ -15,8 +14,7 @@ dependencies = [
 [[package]]
 name = "anodized-core"
 version = "0.5.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "8c262446e9ac1e80911ba63c43912d2318b5f1880e09695b86a803c540dc6ea8"
+source = "git+https://github.com/anodized-rs/anodized.git?branch=feat-aeneas-integration#f7e8e56e43281130ad9ffbcc9a9313f266726e4d"
 dependencies = [
  "bitflags",
  "proc-macro2",
@@ -27,8 +25,7 @@ dependencies = [
 [[package]]
 name = "anodized-logic"
 version = "0.5.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d41949d7fd211327956314e1d2b566b4074528b96b2a229229be4ad3b74cb810"
+source = "git+https://github.com/anodized-rs/anodized.git?branch=feat-aeneas-integration#f7e8e56e43281130ad9ffbcc9a9313f266726e4d"
 dependencies = [
  "num-bigint",
 ]
@@ -36,8 +33,7 @@ dependencies = [
 [[package]]
 name = "anodized-macros"
 version = "0.5.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1f2794c23bd8f66b97494e438daa4d5d00a4eff39ae57938e192bc8b19071891"
+source = "git+https://github.com/anodized-rs/anodized.git?branch=feat-aeneas-integration#f7e8e56e43281130ad9ffbcc9a9313f266726e4d"
 dependencies = [
  "anodized-core",
  "proc-macro2",
