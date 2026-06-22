@@ -12,7 +12,7 @@
   },
   "functions": [
     {
-      "def_id": 21,
+      "def_id": 25,
       "lean_name": "e01.__anodized_fn_requires_f1.closure.Insts.CoreOpsFunctionFnTupleBool.call",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
       "rust_name": "e01::__anodized_fn_requires_f1::{impl core::ops::function::Fn<(), bool> for e01::__anodized_fn_requires_f1::closure<'_0>}::call",
@@ -29,7 +29,7 @@
       "reducible": false
     },
     {
-      "def_id": 20,
+      "def_id": 24,
       "lean_name": "e01.__anodized_fn_requires_f1.closure.Insts.CoreOpsFunctionFnMutTupleBool.call_mut",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
       "rust_name": "e01::__anodized_fn_requires_f1::{impl core::ops::function::FnMut<(), bool> for e01::__anodized_fn_requires_f1::closure<'_0>}::call_mut",
@@ -46,7 +46,7 @@
       "reducible": false
     },
     {
-      "def_id": 19,
+      "def_id": 23,
       "lean_name": "e01.__anodized_fn_requires_f1.closure.Insts.CoreOpsFunctionFnOnceTupleBool.call_once",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
       "rust_name": "e01::__anodized_fn_requires_f1::{impl core::ops::function::FnOnce<(), bool> for e01::__anodized_fn_requires_f1::closure<'_0>}::call_once",
@@ -114,7 +114,7 @@
       "reducible": false
     },
     {
-      "def_id": 24,
+      "def_id": 28,
       "lean_name": "e01.__anodized_fn_ensures_f2.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
       "rust_name": "e01::__anodized_fn_ensures_f2::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f2::closure}::call",
@@ -131,7 +131,7 @@
       "reducible": false
     },
     {
-      "def_id": 23,
+      "def_id": 27,
       "lean_name": "e01.__anodized_fn_ensures_f2.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
       "rust_name": "e01::__anodized_fn_ensures_f2::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f2::closure}::call_mut",
@@ -148,7 +148,7 @@
       "reducible": false
     },
     {
-      "def_id": 22,
+      "def_id": 26,
       "lean_name": "e01.__anodized_fn_ensures_f2.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool.call_once",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
       "rust_name": "e01::__anodized_fn_ensures_f2::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f2::closure}::call_once",
@@ -216,185 +216,168 @@
       "reducible": false
     },
     {
-      "def_id": 126,
+      "def_id": 31,
+      "lean_name": "e01.__anodized_fn_requires_f4.closure.Insts.CoreOpsFunctionFnTupleBool.call",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::__anodized_fn_requires_f4::{impl core::ops::function::Fn<(), bool> for e01::__anodized_fn_requires_f4::closure<'_0>}::call",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 18,
+        "end_line": 21
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 30,
+      "lean_name": "e01.__anodized_fn_requires_f4.closure.Insts.CoreOpsFunctionFnMutTupleBool.call_mut",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::__anodized_fn_requires_f4::{impl core::ops::function::FnMut<(), bool> for e01::__anodized_fn_requires_f4::closure<'_0>}::call_mut",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 18,
+        "end_line": 21
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 29,
+      "lean_name": "e01.__anodized_fn_requires_f4.closure.Insts.CoreOpsFunctionFnOnceTupleBool.call_once",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::__anodized_fn_requires_f4::{impl core::ops::function::FnOnce<(), bool> for e01::__anodized_fn_requires_f4::closure<'_0>}::call_once",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 18,
+        "end_line": 21
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 34,
+      "lean_name": "e01.__anodized_fn_ensures_f4.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::__anodized_fn_ensures_f4::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f4::closure<'_0>}::call",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 18,
+        "end_line": 21
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 33,
+      "lean_name": "e01.__anodized_fn_ensures_f4.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::__anodized_fn_ensures_f4::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f4::closure<'_0>}::call_mut",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 18,
+        "end_line": 21
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 32,
+      "lean_name": "e01.__anodized_fn_ensures_f4.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool.call_once",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::__anodized_fn_ensures_f4::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f4::closure<'_0>}::call_once",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 18,
+        "end_line": 21
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 6,
+      "lean_name": "e01.__anodized_fn_requires_f4",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::__anodized_fn_requires_f4",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 18,
+        "end_line": 21
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 7,
+      "lean_name": "e01.__anodized_fn_ensures_f4",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::__anodized_fn_ensures_f4",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 18,
+        "end_line": 21
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 8,
+      "lean_name": "e01.f4",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::f4",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 22,
+        "end_line": 24
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 136,
       "lean_name": "e01.T.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnTupleBool.call",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
       "rust_name": "e01::T::__anodized_fn_requires_f3::{impl core::ops::function::Fn<(), bool> for e01::T::__anodized_fn_requires_f3::closure<'_0, Self>}::call",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 18,
-        "end_line": 18
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": false,
-      "is_rec": false,
-      "reducible": false
-    },
-    {
-      "def_id": 125,
-      "lean_name": "e01.T.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnMutTupleBool.call_mut",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::T::__anodized_fn_requires_f3::{impl core::ops::function::FnMut<(), bool> for e01::T::__anodized_fn_requires_f3::closure<'_0, Self>}::call_mut",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 18,
-        "end_line": 18
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": false,
-      "is_rec": false,
-      "reducible": false
-    },
-    {
-      "def_id": 124,
-      "lean_name": "e01.T.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnOnceTupleBool.call_once",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::T::__anodized_fn_requires_f3::{impl core::ops::function::FnOnce<(), bool> for e01::T::__anodized_fn_requires_f3::closure<'_0, Self>}::call_once",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 18,
-        "end_line": 18
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": false,
-      "is_rec": false,
-      "reducible": false
-    },
-    {
-      "def_id": 129,
-      "lean_name": "e01.T.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::T::__anodized_fn_ensures_f3::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::T::__anodized_fn_ensures_f3::closure<Self>}::call",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 18,
-        "end_line": 18
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": false,
-      "is_rec": false,
-      "reducible": false
-    },
-    {
-      "def_id": 128,
-      "lean_name": "e01.T.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::T::__anodized_fn_ensures_f3::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::T::__anodized_fn_ensures_f3::closure<Self>}::call_mut",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 18,
-        "end_line": 18
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": false,
-      "is_rec": false,
-      "reducible": false
-    },
-    {
-      "def_id": 127,
-      "lean_name": "e01.T.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool.call_once",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::T::__anodized_fn_ensures_f3::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::T::__anodized_fn_ensures_f3::closure<Self>}::call_once",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 18,
-        "end_line": 18
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": false,
-      "is_rec": false,
-      "reducible": false
-    },
-    {
-      "def_id": 10,
-      "lean_name": "e01.T.__anodized_fn_requires_f3.default",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::T::__anodized_fn_requires_f3",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 18,
-        "end_line": 18
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": false,
-      "is_rec": false,
-      "reducible": false
-    },
-    {
-      "def_id": 11,
-      "lean_name": "e01.T.__anodized_fn_ensures_f3.default",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::T::__anodized_fn_ensures_f3",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 18,
-        "end_line": 18
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": false,
-      "is_rec": false,
-      "reducible": false
-    },
-    {
-      "def_id": 132,
-      "lean_name": "e01.TU8.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnTupleBool.call",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_requires_f3::{impl core::ops::function::Fn<(), bool> for e01::{impl e01::T for u8}::__anodized_fn_requires_f3::closure}::call",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": false,
-      "is_rec": false,
-      "reducible": false
-    },
-    {
-      "def_id": 131,
-      "lean_name": "e01.TU8.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnMutTupleBool.call_mut",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_requires_f3::{impl core::ops::function::FnMut<(), bool> for e01::{impl e01::T for u8}::__anodized_fn_requires_f3::closure}::call_mut",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": false,
-      "is_rec": false,
-      "reducible": false
-    },
-    {
-      "def_id": 130,
-      "lean_name": "e01.TU8.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnOnceTupleBool.call_once",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_requires_f3::{impl core::ops::function::FnOnce<(), bool> for e01::{impl e01::T for u8}::__anodized_fn_requires_f3::closure}::call_once",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
+        "begin_line": 28,
+        "end_line": 28
       },
       "is_opaque": false,
       "can_fail": true,
@@ -404,14 +387,14 @@
     },
     {
       "def_id": 135,
-      "lean_name": "e01.TU8.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call",
+      "lean_name": "e01.T.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnMutTupleBool.call_mut",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::closure}::call",
+      "rust_name": "e01::T::__anodized_fn_requires_f3::{impl core::ops::function::FnMut<(), bool> for e01::T::__anodized_fn_requires_f3::closure<'_0, Self>}::call_mut",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
+        "begin_line": 28,
+        "end_line": 28
       },
       "is_opaque": false,
       "can_fail": true,
@@ -421,14 +404,14 @@
     },
     {
       "def_id": 134,
-      "lean_name": "e01.TU8.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut",
+      "lean_name": "e01.T.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnOnceTupleBool.call_once",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::closure}::call_mut",
+      "rust_name": "e01::T::__anodized_fn_requires_f3::{impl core::ops::function::FnOnce<(), bool> for e01::T::__anodized_fn_requires_f3::closure<'_0, Self>}::call_once",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
+        "begin_line": 28,
+        "end_line": 28
       },
       "is_opaque": false,
       "can_fail": true,
@@ -437,15 +420,15 @@
       "reducible": false
     },
     {
-      "def_id": 133,
-      "lean_name": "e01.TU8.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool.call_once",
+      "def_id": 139,
+      "lean_name": "e01.T.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::closure}::call_once",
+      "rust_name": "e01::T::__anodized_fn_ensures_f3::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::T::__anodized_fn_ensures_f3::closure<Self>}::call",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
+        "begin_line": 28,
+        "end_line": 28
       },
       "is_opaque": false,
       "can_fail": true,
@@ -454,15 +437,15 @@
       "reducible": false
     },
     {
-      "def_id": 12,
-      "lean_name": "e01.U8.Insts.E01T.__anodized_fn_requires_f3",
+      "def_id": 138,
+      "lean_name": "e01.T.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_requires_f3",
+      "rust_name": "e01::T::__anodized_fn_ensures_f3::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::T::__anodized_fn_ensures_f3::closure<Self>}::call_mut",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
+        "begin_line": 28,
+        "end_line": 28
       },
       "is_opaque": false,
       "can_fail": true,
@@ -471,15 +454,15 @@
       "reducible": false
     },
     {
-      "def_id": 13,
-      "lean_name": "e01.U8.Insts.E01T.__anodized_fn_ensures_f3",
+      "def_id": 137,
+      "lean_name": "e01.T.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool.call_once",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_ensures_f3",
+      "rust_name": "e01::T::__anodized_fn_ensures_f3::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::T::__anodized_fn_ensures_f3::closure<Self>}::call_once",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
+        "begin_line": 28,
+        "end_line": 28
       },
       "is_opaque": false,
       "can_fail": true,
@@ -489,14 +472,14 @@
     },
     {
       "def_id": 14,
-      "lean_name": "e01.U8.Insts.E01T.f3",
+      "lean_name": "e01.T.__anodized_fn_requires_f3.default",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{impl e01::T for u8}::f3",
+      "rust_name": "e01::T::__anodized_fn_requires_f3",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 33,
-        "end_line": 35
+        "begin_line": 28,
+        "end_line": 28
       },
       "is_opaque": false,
       "can_fail": true,
@@ -505,125 +488,15 @@
       "reducible": false
     },
     {
-      "def_id": 6,
-      "lean_name": "e01.f_loop_loop.body",
+      "def_id": 15,
+      "lean_name": "e01.T.__anodized_fn_ensures_f3.default",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::f_loop",
+      "rust_name": "e01::T::__anodized_fn_ensures_f3",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 48,
-        "end_line": 52
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": true,
-      "is_rec": false,
-      "reducible": false,
-      "loop": { "id": 0, "pos": [ 0 ], "is_body": true },
-      "parent_lean_name": "e01.f_loop"
-    },
-    {
-      "def_id": 6,
-      "lean_name": "e01.f_loop_loop",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::f_loop",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 48,
-        "end_line": 52
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": true,
-      "is_rec": false,
-      "reducible": false,
-      "loop": { "id": 0, "pos": [ 0 ], "is_body": false },
-      "parent_lean_name": "e01.f_loop"
-    },
-    {
-      "def_id": 6,
-      "lean_name": "e01.f_loop",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::f_loop",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 43,
-        "end_line": 54
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": true,
-      "is_rec": false,
-      "reducible": false
-    },
-    {
-      "def_id": 7,
-      "lean_name": "e01.f_while_loop.body",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::f_while",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 71,
-        "end_line": 76
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": true,
-      "is_rec": false,
-      "reducible": false,
-      "loop": { "id": 0, "pos": [ 0 ], "is_body": true },
-      "parent_lean_name": "e01.f_while"
-    },
-    {
-      "def_id": 7,
-      "lean_name": "e01.f_while_loop",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::f_while",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 71,
-        "end_line": 76
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": true,
-      "is_rec": false,
-      "reducible": false,
-      "loop": { "id": 0, "pos": [ 0 ], "is_body": false },
-      "parent_lean_name": "e01.f_while"
-    },
-    {
-      "def_id": 7,
-      "lean_name": "e01.f_while",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::f_while",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 61,
-        "end_line": 78
-      },
-      "is_opaque": false,
-      "can_fail": true,
-      "can_diverge": true,
-      "is_rec": false,
-      "reducible": true
-    },
-    {
-      "def_id": 172,
-      "lean_name": "e01.S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnTupleBool.call",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{e01::S}::__anodized_data_maintains::{impl core::ops::function::Fn<(), bool> for e01::{e01::S}::__anodized_data_maintains::closure<'_0>}::call",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 82,
-        "end_line": 84
+        "begin_line": 28,
+        "end_line": 28
       },
       "is_opaque": false,
       "can_fail": true,
@@ -632,15 +505,15 @@
       "reducible": false
     },
     {
-      "def_id": 171,
-      "lean_name": "e01.S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnMutTupleBool.call_mut",
+      "def_id": 142,
+      "lean_name": "e01.TU8.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnTupleBool.call",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{e01::S}::__anodized_data_maintains::{impl core::ops::function::FnMut<(), bool> for e01::{e01::S}::__anodized_data_maintains::closure<'_0>}::call_mut",
+      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_requires_f3::{impl core::ops::function::Fn<(), bool> for e01::{impl e01::T for u8}::__anodized_fn_requires_f3::closure}::call",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 82,
-        "end_line": 84
+        "begin_line": 37,
+        "end_line": 37
       },
       "is_opaque": false,
       "can_fail": true,
@@ -649,15 +522,117 @@
       "reducible": false
     },
     {
-      "def_id": 170,
-      "lean_name": "e01.S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnOnceTupleBool.call_once",
+      "def_id": 141,
+      "lean_name": "e01.TU8.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnMutTupleBool.call_mut",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{e01::S}::__anodized_data_maintains::{impl core::ops::function::FnOnce<(), bool> for e01::{e01::S}::__anodized_data_maintains::closure<'_0>}::call_once",
+      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_requires_f3::{impl core::ops::function::FnMut<(), bool> for e01::{impl e01::T for u8}::__anodized_fn_requires_f3::closure}::call_mut",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 82,
-        "end_line": 84
+        "begin_line": 37,
+        "end_line": 37
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 140,
+      "lean_name": "e01.TU8.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnOnceTupleBool.call_once",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_requires_f3::{impl core::ops::function::FnOnce<(), bool> for e01::{impl e01::T for u8}::__anodized_fn_requires_f3::closure}::call_once",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 37,
+        "end_line": 37
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 145,
+      "lean_name": "e01.TU8.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::closure}::call",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 37,
+        "end_line": 37
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 144,
+      "lean_name": "e01.TU8.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::closure}::call_mut",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 37,
+        "end_line": 37
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 143,
+      "lean_name": "e01.TU8.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool.call_once",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::closure}::call_once",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 37,
+        "end_line": 37
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 16,
+      "lean_name": "e01.U8.Insts.E01T.__anodized_fn_requires_f3",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_requires_f3",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 37,
+        "end_line": 37
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 17,
+      "lean_name": "e01.U8.Insts.E01T.__anodized_fn_ensures_f3",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_ensures_f3",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 37,
+        "end_line": 37
       },
       "is_opaque": false,
       "can_fail": true,
@@ -667,14 +642,192 @@
     },
     {
       "def_id": 18,
+      "lean_name": "e01.U8.Insts.E01T.f3",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::{impl e01::T for u8}::f3",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 43,
+        "end_line": 45
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 9,
+      "lean_name": "e01.f_loop_loop.body",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::f_loop",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 58,
+        "end_line": 62
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": true,
+      "is_rec": false,
+      "reducible": false,
+      "loop": { "id": 0, "pos": [ 0 ], "is_body": true },
+      "parent_lean_name": "e01.f_loop"
+    },
+    {
+      "def_id": 9,
+      "lean_name": "e01.f_loop_loop",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::f_loop",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 58,
+        "end_line": 62
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": true,
+      "is_rec": false,
+      "reducible": false,
+      "loop": { "id": 0, "pos": [ 0 ], "is_body": false },
+      "parent_lean_name": "e01.f_loop"
+    },
+    {
+      "def_id": 9,
+      "lean_name": "e01.f_loop",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::f_loop",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 53,
+        "end_line": 64
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": true,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 10,
+      "lean_name": "e01.f_while_loop.body",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::f_while",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 81,
+        "end_line": 86
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": true,
+      "is_rec": false,
+      "reducible": false,
+      "loop": { "id": 0, "pos": [ 0 ], "is_body": true },
+      "parent_lean_name": "e01.f_while"
+    },
+    {
+      "def_id": 10,
+      "lean_name": "e01.f_while_loop",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::f_while",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 81,
+        "end_line": 86
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": true,
+      "is_rec": false,
+      "reducible": false,
+      "loop": { "id": 0, "pos": [ 0 ], "is_body": false },
+      "parent_lean_name": "e01.f_while"
+    },
+    {
+      "def_id": 10,
+      "lean_name": "e01.f_while",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::f_while",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 71,
+        "end_line": 88
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": true,
+      "is_rec": false,
+      "reducible": true
+    },
+    {
+      "def_id": 182,
+      "lean_name": "e01.S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnTupleBool.call",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::{e01::S}::__anodized_data_maintains::{impl core::ops::function::Fn<(), bool> for e01::{e01::S}::__anodized_data_maintains::closure<'_0>}::call",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 92,
+        "end_line": 94
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 181,
+      "lean_name": "e01.S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnMutTupleBool.call_mut",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::{e01::S}::__anodized_data_maintains::{impl core::ops::function::FnMut<(), bool> for e01::{e01::S}::__anodized_data_maintains::closure<'_0>}::call_mut",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 92,
+        "end_line": 94
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 180,
+      "lean_name": "e01.S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnOnceTupleBool.call_once",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::{e01::S}::__anodized_data_maintains::{impl core::ops::function::FnOnce<(), bool> for e01::{e01::S}::__anodized_data_maintains::closure<'_0>}::call_once",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 92,
+        "end_line": 94
+      },
+      "is_opaque": false,
+      "can_fail": true,
+      "can_diverge": false,
+      "is_rec": false,
+      "reducible": false
+    },
+    {
+      "def_id": 22,
       "lean_name": "e01.S.__anodized_data_maintains",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
       "rust_name": "e01::{e01::S}::__anodized_data_maintains",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 82,
-        "end_line": 84
+        "begin_line": 92,
+        "end_line": 94
       },
       "is_opaque": false,
       "can_fail": true,
@@ -709,51 +862,75 @@
       }
     },
     {
-      "def_id": 6,
+      "def_id": 3,
+      "lean_name": "e01.__anodized_fn_requires_f4.closure",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Types.lean",
+      "rust_name": "e01::__anodized_fn_requires_f4::closure",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 18,
+        "end_line": 21
+      }
+    },
+    {
+      "def_id": 4,
+      "lean_name": "e01.__anodized_fn_ensures_f4.closure",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Types.lean",
+      "rust_name": "e01::__anodized_fn_ensures_f4::closure",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 18,
+        "end_line": 21
+      }
+    },
+    {
+      "def_id": 8,
       "lean_name": "e01.T.__anodized_fn_requires_f3.closure",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Types.lean",
       "rust_name": "e01::T::__anodized_fn_requires_f3::closure",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 18,
-        "end_line": 18
+        "begin_line": 28,
+        "end_line": 28
       }
     },
     {
-      "def_id": 7,
+      "def_id": 9,
       "lean_name": "e01.T.__anodized_fn_ensures_f3.closure",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Types.lean",
       "rust_name": "e01::T::__anodized_fn_ensures_f3::closure",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 18,
-        "end_line": 18
+        "begin_line": 28,
+        "end_line": 28
       }
     },
     {
-      "def_id": 8,
+      "def_id": 10,
       "lean_name": "e01.TU8.__anodized_fn_requires_f3.closure",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Types.lean",
       "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_requires_f3::closure",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
+        "begin_line": 37,
+        "end_line": 37
       }
     },
     {
-      "def_id": 9,
+      "def_id": 11,
       "lean_name": "e01.TU8.__anodized_fn_ensures_f3.closure",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Types.lean",
       "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::closure",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
+        "begin_line": 37,
+        "end_line": 37
       }
     },
     {
@@ -764,20 +941,20 @@
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 85,
-        "end_line": 87
+        "begin_line": 95,
+        "end_line": 97
       }
     },
     {
-      "def_id": 41,
+      "def_id": 43,
       "lean_name": "e01.S.__anodized_data_maintains.closure",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Types.lean",
       "rust_name": "e01::{e01::S}::__anodized_data_maintains::closure",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 82,
-        "end_line": 84
+        "begin_line": 92,
+        "end_line": 94
       }
     }
   ],
@@ -810,40 +987,53 @@
     },
     {
       "def_id": 2,
+      "lean_name": "e01.__anodized_fn_qualifiers_f4",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::__anodized_fn_qualifiers_f4",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 18,
+        "end_line": 21
+      },
+      "can_fail": false
+    },
+    {
+      "def_id": 3,
       "lean_name": "e01.T.__anodized_fn_qualifiers_trait_f3.default",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
       "rust_name": "e01::T::__anodized_fn_qualifiers_trait_f3",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 18,
-        "end_line": 18
+        "begin_line": 28,
+        "end_line": 28
       },
       "can_fail": false
     },
     {
-      "def_id": 3,
+      "def_id": 4,
       "lean_name": "e01.T.__anodized_fn_qualifiers_f3.default",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
       "rust_name": "e01::T::__anodized_fn_qualifiers_f3",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 18,
-        "end_line": 18
+        "begin_line": 28,
+        "end_line": 28
       },
       "can_fail": false
     },
     {
-      "def_id": 4,
+      "def_id": 5,
       "lean_name": "e01.U8.Insts.E01T.__anodized_fn_qualifiers_f3",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
       "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_qualifiers_f3",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
+        "begin_line": 37,
+        "end_line": 37
       },
       "can_fail": false
     }
@@ -857,8 +1047,8 @@
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 19,
-        "end_line": 25
+        "begin_line": 29,
+        "end_line": 35
       }
     }
   ],
@@ -954,15 +1144,60 @@
       "impl_trait_is_builtin": true
     },
     {
-      "def_id": 10,
-      "lean_name": "e01.T.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnOnceTupleBool",
+      "def_id": 7,
+      "lean_name": "e01.__anodized_fn_requires_f4.closure.Insts.CoreOpsFunctionFnOnceTupleBool",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::T::__anodized_fn_requires_f3::{impl core::ops::function::FnOnce<(), bool> for e01::T::__anodized_fn_requires_f3::closure<'_0, Self>}",
+      "rust_name": "e01::__anodized_fn_requires_f4::{impl core::ops::function::FnOnce<(), bool> for e01::__anodized_fn_requires_f4::closure<'_0>}",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
         "begin_line": 18,
-        "end_line": 18
+        "end_line": 21
+      },
+      "impl_trait_def_id": 4,
+      "impl_trait_rust_name": "core::ops::function::FnOnce",
+      "impl_trait_is_builtin": true
+    },
+    {
+      "def_id": 8,
+      "lean_name": "e01.__anodized_fn_requires_f4.closure.Insts.CoreOpsFunctionFnMutTupleBool",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::__anodized_fn_requires_f4::{impl core::ops::function::FnMut<(), bool> for e01::__anodized_fn_requires_f4::closure<'_0>}",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 18,
+        "end_line": 21
+      },
+      "impl_trait_def_id": 5,
+      "impl_trait_rust_name": "core::ops::function::FnMut",
+      "impl_trait_is_builtin": true
+    },
+    {
+      "def_id": 9,
+      "lean_name": "e01.__anodized_fn_requires_f4.closure.Insts.CoreOpsFunctionFnTupleBool",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::__anodized_fn_requires_f4::{impl core::ops::function::Fn<(), bool> for e01::__anodized_fn_requires_f4::closure<'_0>}",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 18,
+        "end_line": 21
+      },
+      "impl_trait_def_id": 1,
+      "impl_trait_rust_name": "core::ops::function::Fn",
+      "impl_trait_is_builtin": true
+    },
+    {
+      "def_id": 10,
+      "lean_name": "e01.__anodized_fn_ensures_f4.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::__anodized_fn_ensures_f4::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f4::closure<'_0>}",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 18,
+        "end_line": 21
       },
       "impl_trait_def_id": 4,
       "impl_trait_rust_name": "core::ops::function::FnOnce",
@@ -970,14 +1205,14 @@
     },
     {
       "def_id": 11,
-      "lean_name": "e01.T.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnMutTupleBool",
+      "lean_name": "e01.__anodized_fn_ensures_f4.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::T::__anodized_fn_requires_f3::{impl core::ops::function::FnMut<(), bool> for e01::T::__anodized_fn_requires_f3::closure<'_0, Self>}",
+      "rust_name": "e01::__anodized_fn_ensures_f4::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f4::closure<'_0>}",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
         "begin_line": 18,
-        "end_line": 18
+        "end_line": 21
       },
       "impl_trait_def_id": 5,
       "impl_trait_rust_name": "core::ops::function::FnMut",
@@ -985,59 +1220,14 @@
     },
     {
       "def_id": 12,
-      "lean_name": "e01.T.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnTupleBool",
+      "lean_name": "e01.__anodized_fn_ensures_f4.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::T::__anodized_fn_requires_f3::{impl core::ops::function::Fn<(), bool> for e01::T::__anodized_fn_requires_f3::closure<'_0, Self>}",
+      "rust_name": "e01::__anodized_fn_ensures_f4::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f4::closure<'_0>}",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
         "begin_line": 18,
-        "end_line": 18
-      },
-      "impl_trait_def_id": 1,
-      "impl_trait_rust_name": "core::ops::function::Fn",
-      "impl_trait_is_builtin": true
-    },
-    {
-      "def_id": 13,
-      "lean_name": "e01.T.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::T::__anodized_fn_ensures_f3::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::T::__anodized_fn_ensures_f3::closure<Self>}",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 18,
-        "end_line": 18
-      },
-      "impl_trait_def_id": 4,
-      "impl_trait_rust_name": "core::ops::function::FnOnce",
-      "impl_trait_is_builtin": true
-    },
-    {
-      "def_id": 14,
-      "lean_name": "e01.T.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::T::__anodized_fn_ensures_f3::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::T::__anodized_fn_ensures_f3::closure<Self>}",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 18,
-        "end_line": 18
-      },
-      "impl_trait_def_id": 5,
-      "impl_trait_rust_name": "core::ops::function::FnMut",
-      "impl_trait_is_builtin": true
-    },
-    {
-      "def_id": 15,
-      "lean_name": "e01.T.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool",
-      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::T::__anodized_fn_ensures_f3::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::T::__anodized_fn_ensures_f3::closure<Self>}",
-      "is_local": true,
-      "source": {
-        "file": "examples/e01/src/lib.rs",
-        "begin_line": 18,
-        "end_line": 18
+        "end_line": 21
       },
       "impl_trait_def_id": 1,
       "impl_trait_rust_name": "core::ops::function::Fn",
@@ -1045,14 +1235,14 @@
     },
     {
       "def_id": 16,
-      "lean_name": "e01.TU8.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnOnceTupleBool",
+      "lean_name": "e01.T.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnOnceTupleBool",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_requires_f3::{impl core::ops::function::FnOnce<(), bool> for e01::{impl e01::T for u8}::__anodized_fn_requires_f3::closure}",
+      "rust_name": "e01::T::__anodized_fn_requires_f3::{impl core::ops::function::FnOnce<(), bool> for e01::T::__anodized_fn_requires_f3::closure<'_0, Self>}",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
+        "begin_line": 28,
+        "end_line": 28
       },
       "impl_trait_def_id": 4,
       "impl_trait_rust_name": "core::ops::function::FnOnce",
@@ -1060,14 +1250,14 @@
     },
     {
       "def_id": 17,
-      "lean_name": "e01.TU8.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnMutTupleBool",
+      "lean_name": "e01.T.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnMutTupleBool",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_requires_f3::{impl core::ops::function::FnMut<(), bool> for e01::{impl e01::T for u8}::__anodized_fn_requires_f3::closure}",
+      "rust_name": "e01::T::__anodized_fn_requires_f3::{impl core::ops::function::FnMut<(), bool> for e01::T::__anodized_fn_requires_f3::closure<'_0, Self>}",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
+        "begin_line": 28,
+        "end_line": 28
       },
       "impl_trait_def_id": 5,
       "impl_trait_rust_name": "core::ops::function::FnMut",
@@ -1075,14 +1265,14 @@
     },
     {
       "def_id": 18,
-      "lean_name": "e01.TU8.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnTupleBool",
+      "lean_name": "e01.T.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnTupleBool",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_requires_f3::{impl core::ops::function::Fn<(), bool> for e01::{impl e01::T for u8}::__anodized_fn_requires_f3::closure}",
+      "rust_name": "e01::T::__anodized_fn_requires_f3::{impl core::ops::function::Fn<(), bool> for e01::T::__anodized_fn_requires_f3::closure<'_0, Self>}",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
+        "begin_line": 28,
+        "end_line": 28
       },
       "impl_trait_def_id": 1,
       "impl_trait_rust_name": "core::ops::function::Fn",
@@ -1090,14 +1280,14 @@
     },
     {
       "def_id": 19,
-      "lean_name": "e01.TU8.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool",
+      "lean_name": "e01.T.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::closure}",
+      "rust_name": "e01::T::__anodized_fn_ensures_f3::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::T::__anodized_fn_ensures_f3::closure<Self>}",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
+        "begin_line": 28,
+        "end_line": 28
       },
       "impl_trait_def_id": 4,
       "impl_trait_rust_name": "core::ops::function::FnOnce",
@@ -1105,14 +1295,14 @@
     },
     {
       "def_id": 20,
-      "lean_name": "e01.TU8.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool",
+      "lean_name": "e01.T.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
-      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::closure}",
+      "rust_name": "e01::T::__anodized_fn_ensures_f3::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::T::__anodized_fn_ensures_f3::closure<Self>}",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
+        "begin_line": 28,
+        "end_line": 28
       },
       "impl_trait_def_id": 5,
       "impl_trait_rust_name": "core::ops::function::FnMut",
@@ -1120,14 +1310,104 @@
     },
     {
       "def_id": 21,
+      "lean_name": "e01.T.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::T::__anodized_fn_ensures_f3::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::T::__anodized_fn_ensures_f3::closure<Self>}",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 28,
+        "end_line": 28
+      },
+      "impl_trait_def_id": 1,
+      "impl_trait_rust_name": "core::ops::function::Fn",
+      "impl_trait_is_builtin": true
+    },
+    {
+      "def_id": 22,
+      "lean_name": "e01.TU8.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnOnceTupleBool",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_requires_f3::{impl core::ops::function::FnOnce<(), bool> for e01::{impl e01::T for u8}::__anodized_fn_requires_f3::closure}",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 37,
+        "end_line": 37
+      },
+      "impl_trait_def_id": 4,
+      "impl_trait_rust_name": "core::ops::function::FnOnce",
+      "impl_trait_is_builtin": true
+    },
+    {
+      "def_id": 23,
+      "lean_name": "e01.TU8.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnMutTupleBool",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_requires_f3::{impl core::ops::function::FnMut<(), bool> for e01::{impl e01::T for u8}::__anodized_fn_requires_f3::closure}",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 37,
+        "end_line": 37
+      },
+      "impl_trait_def_id": 5,
+      "impl_trait_rust_name": "core::ops::function::FnMut",
+      "impl_trait_is_builtin": true
+    },
+    {
+      "def_id": 24,
+      "lean_name": "e01.TU8.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnTupleBool",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_requires_f3::{impl core::ops::function::Fn<(), bool> for e01::{impl e01::T for u8}::__anodized_fn_requires_f3::closure}",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 37,
+        "end_line": 37
+      },
+      "impl_trait_def_id": 1,
+      "impl_trait_rust_name": "core::ops::function::Fn",
+      "impl_trait_is_builtin": true
+    },
+    {
+      "def_id": 25,
+      "lean_name": "e01.TU8.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::closure}",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 37,
+        "end_line": 37
+      },
+      "impl_trait_def_id": 4,
+      "impl_trait_rust_name": "core::ops::function::FnOnce",
+      "impl_trait_is_builtin": true
+    },
+    {
+      "def_id": 26,
+      "lean_name": "e01.TU8.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool",
+      "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
+      "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::closure}",
+      "is_local": true,
+      "source": {
+        "file": "examples/e01/src/lib.rs",
+        "begin_line": 37,
+        "end_line": 37
+      },
+      "impl_trait_def_id": 5,
+      "impl_trait_rust_name": "core::ops::function::FnMut",
+      "impl_trait_is_builtin": true
+    },
+    {
+      "def_id": 27,
       "lean_name": "e01.TU8.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
       "rust_name": "e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::{impl e01::T for u8}::__anodized_fn_ensures_f3::closure}",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 27,
-        "end_line": 27
+        "begin_line": 37,
+        "end_line": 37
       },
       "impl_trait_def_id": 1,
       "impl_trait_rust_name": "core::ops::function::Fn",
@@ -1141,53 +1421,53 @@
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 28,
-        "end_line": 36
+        "begin_line": 38,
+        "end_line": 46
       },
       "impl_trait_def_id": 0,
       "impl_trait_rust_name": "e01::T",
       "impl_trait_is_builtin": false
     },
     {
-      "def_id": 25,
+      "def_id": 31,
       "lean_name": "e01.S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnOnceTupleBool",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
       "rust_name": "e01::{e01::S}::__anodized_data_maintains::{impl core::ops::function::FnOnce<(), bool> for e01::{e01::S}::__anodized_data_maintains::closure<'_0>}",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 82,
-        "end_line": 84
+        "begin_line": 92,
+        "end_line": 94
       },
       "impl_trait_def_id": 4,
       "impl_trait_rust_name": "core::ops::function::FnOnce",
       "impl_trait_is_builtin": true
     },
     {
-      "def_id": 26,
+      "def_id": 32,
       "lean_name": "e01.S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnMutTupleBool",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
       "rust_name": "e01::{e01::S}::__anodized_data_maintains::{impl core::ops::function::FnMut<(), bool> for e01::{e01::S}::__anodized_data_maintains::closure<'_0>}",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 82,
-        "end_line": 84
+        "begin_line": 92,
+        "end_line": 94
       },
       "impl_trait_def_id": 5,
       "impl_trait_rust_name": "core::ops::function::FnMut",
       "impl_trait_is_builtin": true
     },
     {
-      "def_id": 27,
+      "def_id": 33,
       "lean_name": "e01.S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnTupleBool",
       "lean_file": "/mnt/projects/Verification/prototype-aeneas-integration/examples/e01/translation/Funs.lean",
       "rust_name": "e01::{e01::S}::__anodized_data_maintains::{impl core::ops::function::Fn<(), bool> for e01::{e01::S}::__anodized_data_maintains::closure<'_0>}",
       "is_local": true,
       "source": {
         "file": "examples/e01/src/lib.rs",
-        "begin_line": 82,
-        "end_line": 84
+        "begin_line": 92,
+        "end_line": 94
       },
       "impl_trait_def_id": 1,
       "impl_trait_rust_name": "core::ops::function::Fn",

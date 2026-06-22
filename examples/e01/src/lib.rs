@@ -13,6 +13,16 @@ pub fn f2() -> u8 {
     1
 }
 
+// Input with a precondition: `x > 0` is required so `x - 1` does not underflow.
+// The postcondition `*output < x` is a total comparison (no fallible ops in the predicate).
+#[spec(
+    requires: x > 0,
+    ensures: *output < x,
+)]
+pub fn f4(x: u8) -> u8 {
+    x - 1
+}
+
 // Trait specs
 
 #[spec]
