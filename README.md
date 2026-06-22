@@ -1,2 +1,3 @@
-# prototype-aeneas-integration
+# Prototype: Aeneas Integration
+
 Prototype of integrating Aeneas with Anodized
