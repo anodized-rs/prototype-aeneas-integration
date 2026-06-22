@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2"
+members = [
+    "examples/e01",
+    "examples/e02",
+]
+
+[workspace.dependencies]
+anodized = "0.5.1"
