@@ -25,4 +25,30 @@ def __anodized_fn_requires_collatz.closure := anodized_logic.arithmetic.int
 @[reducible]
 def __anodized_fn_ensures_collatz.closure := Unit
 
+/-- [e02::__anodized_fn_requires_decrement::closure]
+    Source: 'examples/e02/src/lib.rs', lines 28:0-31:2 -/
+@[reducible]
+def __anodized_fn_requires_decrement.closure := Std.U8
+
+/-- [e02::__anodized_fn_ensures_decrement::closure]
+    Source: 'examples/e02/src/lib.rs', lines 28:0-31:2 -/
+@[reducible]
+def __anodized_fn_ensures_decrement.closure := Std.U8
+
+/-- [e02::__anodized_fn_requires_add::closure]
+    Source: 'examples/e02/src/lib.rs', lines 36:0-39:2 -/
+def __anodized_fn_requires_add.closure := Std.U8 × Std.U8
+
+/-- [e02::__anodized_fn_ensures_add::closure]
+    Source: 'examples/e02/src/lib.rs', lines 36:0-39:2 -/
+def __anodized_fn_ensures_add.closure := Std.U8 × Std.U8
+
+/-- [e02::__anodized_fn_requires_sub::closure]
+    Source: 'examples/e02/src/lib.rs', lines 44:0-47:2 -/
+def __anodized_fn_requires_sub.closure := Std.U8 × Std.U8
+
+/-- [e02::__anodized_fn_ensures_sub::closure]
+    Source: 'examples/e02/src/lib.rs', lines 44:0-47:2 -/
+def __anodized_fn_ensures_sub.closure := Std.U8 × Std.U8
+
 end e02

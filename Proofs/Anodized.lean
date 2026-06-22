@@ -77,3 +77,11 @@ elab "register_anodized_simps" : command => do
       ids := ids.push (Lean.mkIdent n)
   if ids.isEmpty then return
   Lean.Elab.Command.elabCommand (← `(attribute [step_simps] $ids*))
+
+/-- `m = ok v ↔ m ⦃ x => x = v ⦄` (the Aeneas WP triple is total). Use it to turn a
+postcondition `… = ok true` — or a hypothesis of that shape — into a `⦃ ⦄` triple that
+`step*` can evaluate. -/
+theorem eq_ok_iff {α} {m : Aeneas.Std.Result α} {v : α} :
+    m = .ok v ↔ Aeneas.Std.WP.spec m (fun x => x = v) := by
+  rw [Aeneas.Std.WP.spec_equiv_exists]
+  exact ⟨fun h => ⟨v, h, rfl⟩, fun ⟨_, hy, h⟩ => h ▸ hy⟩

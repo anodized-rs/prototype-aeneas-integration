@@ -15,6 +15,15 @@ set_option maxHeartbeats 1000000
 set_option maxRecDepth 2048
 open e02
 
+/-- [anodized_logic::arithmetic::{impl core::convert::From<u8> for anodized_logic::arithmetic::int}::from]:
+    Source: '/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic/interop.rs', lines 11:12-11:36
+    Name pattern: [anodized_logic::arithmetic::{core::convert::From<anodized_logic::arithmetic::int, u8>}::from]
+    Visibility: public -/
+@[rust_fun
+  "anodized_logic::arithmetic::{core::convert::From<anodized_logic::arithmetic::int, u8>}::from"]
+axiom anodized_logic.arithmetic.int.Insts.CoreConvertFromU8.from
+  : Std.U8 → Result anodized_logic.arithmetic.int
+
 /-- [anodized_logic::arithmetic::{impl core::ops::arith::Add<i32, anodized_logic::arithmetic::int> for anodized_logic::arithmetic::int}::add]:
     Source: '/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic/interop.rs', lines 75:12-75:60
     Name pattern: [anodized_logic::arithmetic::{core::ops::arith::Add<anodized_logic::arithmetic::int, i32, anodized_logic::arithmetic::int>}::add]
@@ -76,4 +85,48 @@ axiom anodized_logic.arithmetic.int.Insts.CoreCmpPartialEqI32.eq
   "anodized_logic::arithmetic::{core::cmp::PartialOrd<anodized_logic::arithmetic::int, i32>}::gt"]
 axiom anodized_logic.arithmetic.int.Insts.CoreCmpPartialOrdI32.gt
   : anodized_logic.arithmetic.int → Std.I32 → Result Bool
+
+/-- [anodized_logic::arithmetic::{impl core::cmp::PartialEq<anodized_logic::arithmetic::int> for anodized_logic::arithmetic::int}::eq]:
+    Source: '/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic.rs', lines 4:27-4:36
+    Name pattern: [anodized_logic::arithmetic::{core::cmp::PartialEq<anodized_logic::arithmetic::int, anodized_logic::arithmetic::int>}::eq]
+    Visibility: public -/
+@[rust_fun
+  "anodized_logic::arithmetic::{core::cmp::PartialEq<anodized_logic::arithmetic::int, anodized_logic::arithmetic::int>}::eq"]
+axiom anodized_logic.arithmetic.int.Insts.CoreCmpPartialEqint.eq
+  :
+  anodized_logic.arithmetic.int → anodized_logic.arithmetic.int → Result
+    Bool
+
+/-- [anodized_logic::arithmetic::{impl core::cmp::PartialOrd<anodized_logic::arithmetic::int> for anodized_logic::arithmetic::int}::le]:
+    Source: '/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic.rs', lines 4:43-4:53
+    Name pattern: [anodized_logic::arithmetic::{core::cmp::PartialOrd<anodized_logic::arithmetic::int, anodized_logic::arithmetic::int>}::le]
+    Visibility: public -/
+@[rust_fun
+  "anodized_logic::arithmetic::{core::cmp::PartialOrd<anodized_logic::arithmetic::int, anodized_logic::arithmetic::int>}::le"]
+axiom anodized_logic.arithmetic.int.Insts.CoreCmpPartialOrdint.le
+  :
+  anodized_logic.arithmetic.int → anodized_logic.arithmetic.int → Result
+    Bool
+
+/-- [anodized_logic::arithmetic::{impl core::ops::arith::Add<anodized_logic::arithmetic::int, anodized_logic::arithmetic::int> for anodized_logic::arithmetic::int}::add]:
+    Source: '/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic.rs', lines 31:4-31:33
+    Name pattern: [anodized_logic::arithmetic::{core::ops::arith::Add<anodized_logic::arithmetic::int, anodized_logic::arithmetic::int, anodized_logic::arithmetic::int>}::add]
+    Visibility: public -/
+@[rust_fun
+  "anodized_logic::arithmetic::{core::ops::arith::Add<anodized_logic::arithmetic::int, anodized_logic::arithmetic::int, anodized_logic::arithmetic::int>}::add"]
+axiom anodized_logic.arithmetic.int.Insts.CoreOpsArithAddintint.add
+  :
+  anodized_logic.arithmetic.int → anodized_logic.arithmetic.int → Result
+    anodized_logic.arithmetic.int
+
+/-- [anodized_logic::arithmetic::{impl core::ops::arith::Sub<anodized_logic::arithmetic::int, anodized_logic::arithmetic::int> for anodized_logic::arithmetic::int}::sub]:
+    Source: '/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic.rs', lines 40:4-40:33
+    Name pattern: [anodized_logic::arithmetic::{core::ops::arith::Sub<anodized_logic::arithmetic::int, anodized_logic::arithmetic::int, anodized_logic::arithmetic::int>}::sub]
+    Visibility: public -/
+@[rust_fun
+  "anodized_logic::arithmetic::{core::ops::arith::Sub<anodized_logic::arithmetic::int, anodized_logic::arithmetic::int, anodized_logic::arithmetic::int>}::sub"]
+axiom anodized_logic.arithmetic.int.Insts.CoreOpsArithSubintint.sub
+  :
+  anodized_logic.arithmetic.int → anodized_logic.arithmetic.int → Result
+    anodized_logic.arithmetic.int
 
