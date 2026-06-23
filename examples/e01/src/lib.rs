@@ -1,7 +1,4 @@
-use anodized::{
-    logic::{implies, quantifiers::forall},
-    spec,
-};
+use anodized::spec;
 
 // Fn specs
 
@@ -47,9 +44,13 @@ impl T for u8 {
 
 // Loop invariants
 
-// #[spec(
-//     ensures: forall(|j: usize| implies!(j < x.len(), x[j] <= *output)),
-// )]
+#[spec(
+    ensures: [
+        // If this doesn't work with Aeneas, try the one below.
+        x.iter().all(|item| item <= output),
+        //(0..x.len()).all(|j| x[j] <= *output),
+    ],
+)]
 pub fn f_loop(x: &[u8]) -> u8 {
     let mut max = 0;
     // #[spec(
@@ -65,9 +66,13 @@ pub fn f_loop(x: &[u8]) -> u8 {
 
 // While loop termination
 
-// #[spec(
-//     ensures: forall(|j: usize| implies!(j < x.len(), x[j] <= *output),
-// ))]
+#[spec(
+    ensures: [
+        // If this doesn't work with Aeneas, try the one below.
+        x.iter().all(|item| item <= output),
+        //(0..x.len()).all(|j| x[j] <= *output),
+    ],
+)]
 pub fn f_while(x: &[u8]) -> u8 {
     let mut max = 0;
     let mut i = 0;
