@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "aeneas-install": "tsx scripts/aeneas-install.ts",
+    "translate": "tsx scripts/aeneas-extract-one.ts",
+    "translate-all": "tsx scripts/aeneas-extract-all.ts"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "chalk": "^5.4.0",
+    "execa": "^9.5.0",
+    "js-yaml": "^4.1.0",
+    "ora": "^8.2.0"
+  }
+}
