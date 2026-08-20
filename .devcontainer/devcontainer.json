@@ -1,0 +1,4 @@
+{
+  "name": "prototype-aeneas-integration",
+  "image": "ghcr.io/anodized-rs/devcontainer-base:0.1.0",
+}
