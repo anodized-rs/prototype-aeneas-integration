@@ -1,15 +1,15 @@
 {
   "name": "prototype-aeneas-integration",
-  "image": "ghcr.io/anodized-rs/devcontainer-base:0.1.0",
+  "image": "ghcr.io/anodized-rs/devcontainer-base:0.1.1",
   "customizations": {
     "codespaces": {
       "repositories": {
         "anodized-rs/devcontainer-base": {
           "permissions": {
-            "packages": "read"
-          }
-        }
-      }
-    }
-  }
+            "packages": "read",
+          },
+        },
+      },
+    },
+  },
 }
