@@ -1,5 +1,5 @@
 import examples.e02.translation.Funs
-import Proofs.Anodized
+import Anodized
 import Proofs.IntExternal
 
 open Aeneas Std.Result
@@ -34,7 +34,7 @@ theorem decrement_spec : Anodized decrement := by
 theorem requires_add_spec' {x y : Std.U8} :
     __anodized_fn_requires_add x y = ok true ↔ x.val + y.val ≤ 255 := by
   have hk : __anodized_fn_requires_add x y = ok (decide ((x.val : Int) + y.val ≤ 255)) := by
-    rw [eq_ok_iff]; step*; simp_all
+    rw [eq_ok_iff]; step*
   rw [hk]; simp only [Std.Result.ok.injEq, decide_eq_true_eq]; omega
 
 theorem ensures_add_spec' {x y out : Std.U8} :

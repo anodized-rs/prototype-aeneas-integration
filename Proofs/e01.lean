@@ -1,5 +1,5 @@
 import examples.e01.translation.Funs
-import Proofs.Anodized
+import Anodized
 
 open Aeneas Std.Result
 open e01
