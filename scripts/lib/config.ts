@@ -4,7 +4,8 @@ import yaml from "js-yaml";
 
 export interface AeneasConfig {
   aeneas: {
-    commit: string;
+    /** GitHub release tag, e.g. `nightly-2026.08.31-379890b`. */
+    tag: string;
     repo: string;
   };
 }
@@ -45,7 +46,7 @@ export function loadConfig(root?: string): { config: AeneasConfig; root: string 
   const config = raw as unknown as AeneasConfig;
 
   // Validate required fields
-  if (!config.aeneas?.commit) throw new Error("Missing required field: aeneas.commit");
+  if (!config.aeneas?.tag) throw new Error("Missing required field: aeneas.tag");
   if (!config.aeneas?.repo) throw new Error("Missing required field: aeneas.repo");
 
   return { config, root: projectRoot };
