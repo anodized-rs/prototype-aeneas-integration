@@ -16,7 +16,7 @@ set_option maxRecDepth 2048
 open e01
 
 /-- [core::cmp::impls::{impl core::cmp::PartialOrd<&'_0 B> for &'_1 A}::le]:
-    Source: '/rustc/library/core/src/cmp.rs', lines 2421:8-2421:40
+    Source: '/rustc/library/core/src/cmp.rs', lines 2145:8-2145:40
     Name pattern: [core::cmp::impls::{core::cmp::PartialOrd<&'1 @A, &'0 @B>}::le]
     Visibility: public -/
 @[rust_fun "core::cmp::impls::{core::cmp::PartialOrd<&'1 @A, &'0 @B>}::le"]
@@ -25,10 +25,10 @@ axiom Shared1A.Insts.CoreCmpPartialOrdShared0B.le
   A → B → Result Bool
 
 /-- [core::iter::traits::iterator::Iterator::all]:
-    Source: '/rustc/library/core/src/iter/traits/iterator.rs', lines 2827:4-2830:37
+    Source: '/rustc/library/core/src/iter/traits/iterator.rs', lines 2831:4-2834:37
     Name pattern: [core::iter::traits::iterator::Iterator::all]
     Visibility: public -/
-@[trait_default, rust_fun "core::iter::traits::iterator::Iterator::all"]
+@[rust_fun "core::iter::traits::iterator::Iterator::all"]
 axiom core.iter.traits.iterator.Iterator.all.default
   {Self : Type} {F : Type} {Clause0_Item : Type} (IteratorInst :
   core.iter.traits.iterator.Iterator Self Clause0_Item)
@@ -37,7 +37,7 @@ axiom core.iter.traits.iterator.Iterator.all.default
   Self → F → Result (Bool × Self)
 
 /-- [core::slice::iter::{impl core::iter::traits::iterator::Iterator<&'a T> for core::slice::iter::Iter<'a, T>}::all]:
-    Source: '/rustc/library/core/src/slice/iter/macros.rs', lines 304:12-307:45
+    Source: '/rustc/library/core/src/slice/iter/macros.rs', lines 309:12-312:45
     Name pattern: [core::slice::iter::{core::iter::traits::iterator::Iterator<core::slice::iter::Iter<'a, @T>, &'a @T>}::all]
     Visibility: public -/
 @[rust_fun

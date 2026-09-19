@@ -482,7 +482,6 @@ def T.__anodized_fn_ensures_f3.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool
 /-- [e01::T::__anodized_fn_requires_f3]:
     Source: 'examples/e01/src/lib.rs', lines 25:0-25:7
     Visibility: public -/
-@[trait_default]
 def T.__anodized_fn_requires_f3.default
   {Self : Type} (TInst : T Self) (x : Std.U8) : Result Bool := do
   T.__anodized_fn_requires_f3.closure.Insts.CoreOpsFunctionFnTupleBool.call
@@ -491,7 +490,6 @@ def T.__anodized_fn_requires_f3.default
 /-- [e01::T::__anodized_fn_ensures_f3]:
     Source: 'examples/e01/src/lib.rs', lines 25:0-25:7
     Visibility: public -/
-@[trait_default]
 def T.__anodized_fn_ensures_f3.default
   {Self : Type} (TInst : T Self) (x : Std.U8) (__anodized_output : Std.U8) :
   Result Bool
