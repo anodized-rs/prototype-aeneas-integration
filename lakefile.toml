@@ -4,11 +4,12 @@ defaultTargets = ["examples"]
 [leanOptions]
 linter.style.nameCheck = false
 
+# `rev` must be the same release tag pinned in aeneas-config.yml
 [[require]]
 name = "aeneas"
 git = "https://github.com/AeneasVerif/aeneas.git"
 subDir = "backends/lean"
-rev = "fa699427cdfa8f604b891fb0223ef42883dd7dc4"
+rev = "nightly-2026.08.31-379890b"
 
 [[lean_lib]]
 name = "examples"

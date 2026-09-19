@@ -77,14 +77,14 @@ axiom I32.Insts.CoreOpsArithMulShared0intint.mul
 axiom anodized_logic.arithmetic.int.Insts.CoreCmpPartialEqI32.eq
   : anodized_logic.arithmetic.int → Std.I32 → Result Bool
 
-/-- [anodized_logic::arithmetic::{impl core::cmp::PartialOrd<i32> for anodized_logic::arithmetic::int}::gt]:
-    Source: '/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic/interop.rs', lines 239:8-239:68
-    Name pattern: [anodized_logic::arithmetic::{core::cmp::PartialOrd<anodized_logic::arithmetic::int, i32>}::gt]
+/-- [anodized_logic::arithmetic::{impl core::cmp::PartialOrd<i32> for anodized_logic::arithmetic::int}::partial_cmp]:
+    Source: '/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic/interop.rs', lines 241:12-241:78
+    Name pattern: [anodized_logic::arithmetic::{core::cmp::PartialOrd<anodized_logic::arithmetic::int, i32>}::partial_cmp]
     Visibility: public -/
 @[rust_fun
-  "anodized_logic::arithmetic::{core::cmp::PartialOrd<anodized_logic::arithmetic::int, i32>}::gt"]
-axiom anodized_logic.arithmetic.int.Insts.CoreCmpPartialOrdI32.gt
-  : anodized_logic.arithmetic.int → Std.I32 → Result Bool
+  "anodized_logic::arithmetic::{core::cmp::PartialOrd<anodized_logic::arithmetic::int, i32>}::partial_cmp"]
+axiom anodized_logic.arithmetic.int.Insts.CoreCmpPartialOrdI32.partial_cmp
+  : anodized_logic.arithmetic.int → Std.I32 → Result (Option Ordering)
 
 /-- [anodized_logic::arithmetic::{impl core::cmp::PartialEq<anodized_logic::arithmetic::int> for anodized_logic::arithmetic::int}::eq]:
     Source: '/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic.rs', lines 4:27-4:36
@@ -97,16 +97,16 @@ axiom anodized_logic.arithmetic.int.Insts.CoreCmpPartialEqint.eq
   anodized_logic.arithmetic.int → anodized_logic.arithmetic.int → Result
     Bool
 
-/-- [anodized_logic::arithmetic::{impl core::cmp::PartialOrd<anodized_logic::arithmetic::int> for anodized_logic::arithmetic::int}::le]:
+/-- [anodized_logic::arithmetic::{impl core::cmp::PartialOrd<anodized_logic::arithmetic::int> for anodized_logic::arithmetic::int}::partial_cmp]:
     Source: '/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic.rs', lines 4:43-4:53
-    Name pattern: [anodized_logic::arithmetic::{core::cmp::PartialOrd<anodized_logic::arithmetic::int, anodized_logic::arithmetic::int>}::le]
+    Name pattern: [anodized_logic::arithmetic::{core::cmp::PartialOrd<anodized_logic::arithmetic::int, anodized_logic::arithmetic::int>}::partial_cmp]
     Visibility: public -/
 @[rust_fun
-  "anodized_logic::arithmetic::{core::cmp::PartialOrd<anodized_logic::arithmetic::int, anodized_logic::arithmetic::int>}::le"]
-axiom anodized_logic.arithmetic.int.Insts.CoreCmpPartialOrdint.le
+  "anodized_logic::arithmetic::{core::cmp::PartialOrd<anodized_logic::arithmetic::int, anodized_logic::arithmetic::int>}::partial_cmp"]
+axiom anodized_logic.arithmetic.int.Insts.CoreCmpPartialOrdint.partial_cmp
   :
   anodized_logic.arithmetic.int → anodized_logic.arithmetic.int → Result
-    Bool
+    (Option Ordering)
 
 /-- [anodized_logic::arithmetic::{impl core::ops::arith::Add<anodized_logic::arithmetic::int, anodized_logic::arithmetic::int> for anodized_logic::arithmetic::int}::add]:
     Source: '/cargo/git/checkouts/anodized-c4166da61bc74ac3/f7e8e56/crates/anodized-logic/src/arithmetic.rs', lines 31:4-31:33
