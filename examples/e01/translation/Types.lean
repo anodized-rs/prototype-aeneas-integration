@@ -65,33 +65,43 @@ def TU8.__anodized_fn_requires_f3.closure := Unit
 def TU8.__anodized_fn_ensures_f3.closure := Unit
 
 /-- [e01::__anodized_fn_ensures_f_loop::closure]
-    Source: 'examples/e01/src/lib.rs', lines 47:0-53:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
 @[reducible]
 def __anodized_fn_ensures_f_loop.closure := Slice Std.U8
 
+/-- [e01::__anodized_fn_ensures_f_loop::closure#1]
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
+@[reducible]
+def __anodized_fn_ensures_f_loop.closure_1 := Slice Std.U8
+
 /-- [e01::__anodized_fn_ensures_f_loop::closure::closure]
-    Source: 'examples/e01/src/lib.rs', lines 50:21-50:42 -/
+    Source: 'examples/e01/src/lib.rs', lines 52:21-52:42 -/
 @[reducible]
 def __anodized_fn_ensures_f_loop.closure.closure := Std.U8
 
 /-- [e01::__anodized_fn_ensures_f_while::closure]
-    Source: 'examples/e01/src/lib.rs', lines 69:0-75:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
 @[reducible]
 def __anodized_fn_ensures_f_while.closure := Slice Std.U8
 
+/-- [e01::__anodized_fn_ensures_f_while::closure#1]
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
+@[reducible]
+def __anodized_fn_ensures_f_while.closure_1 := Slice Std.U8
+
 /-- [e01::__anodized_fn_ensures_f_while::closure::closure]
-    Source: 'examples/e01/src/lib.rs', lines 72:21-72:42 -/
+    Source: 'examples/e01/src/lib.rs', lines 73:21-73:42 -/
 @[reducible]
 def __anodized_fn_ensures_f_while.closure.closure := Std.U8
 
 /-- [e01::S]
-    Source: 'examples/e01/src/lib.rs', lines 100:0-102:1
+    Source: 'examples/e01/src/lib.rs', lines 101:0-103:1
     Visibility: public -/
 structure S where
   x : Std.U8
 
 /-- [e01::{e01::S}::__anodized_data_maintains::closure]
-    Source: 'examples/e01/src/lib.rs', lines 97:0-99:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 98:0-100:2 -/
 @[reducible]
 def S.__anodized_data_maintains.closure := S
 

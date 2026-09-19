@@ -677,7 +677,7 @@ def U8.Insts.E01T : T Std.U8 := {
 }
 
 /-- [e01::__anodized_fn_ensures_f_loop::closure::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure::closure<'_0>}::call_mut]:
-    Source: 'examples/e01/src/lib.rs', lines 50:21-50:42 -/
+    Source: 'examples/e01/src/lib.rs', lines 52:21-52:42 -/
 def
   __anodized_fn_ensures_f_loop.closure.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut
   (c : __anodized_fn_ensures_f_loop.closure.closure) (tupled_args : Std.U8) :
@@ -689,7 +689,7 @@ def
   ok (b, c)
 
 /-- [e01::__anodized_fn_ensures_f_loop::closure::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure::closure<'_0>}::call_once]:
-    Source: 'examples/e01/src/lib.rs', lines 50:21-50:42 -/
+    Source: 'examples/e01/src/lib.rs', lines 52:21-52:42 -/
 def
   __anodized_fn_ensures_f_loop.closure.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool.call_once
   (c : __anodized_fn_ensures_f_loop.closure.closure) (i : Std.U8) :
@@ -701,7 +701,7 @@ def
   ok b
 
 /-- Trait implementation: [e01::__anodized_fn_ensures_f_loop::closure::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure::closure<'_0>}]
-    Source: 'examples/e01/src/lib.rs', lines 50:21-50:42 -/
+    Source: 'examples/e01/src/lib.rs', lines 52:21-52:42 -/
 @[reducible]
 def
   __anodized_fn_ensures_f_loop.closure.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool
@@ -712,7 +712,7 @@ def
 }
 
 /-- Trait implementation: [e01::__anodized_fn_ensures_f_loop::closure::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure::closure<'_0>}]
-    Source: 'examples/e01/src/lib.rs', lines 50:21-50:42 -/
+    Source: 'examples/e01/src/lib.rs', lines 52:21-52:42 -/
 @[reducible]
 def
   __anodized_fn_ensures_f_loop.closure.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool
@@ -725,7 +725,7 @@ def
 }
 
 /-- [e01::__anodized_fn_ensures_f_loop::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure<'_0>}::call]:
-    Source: 'examples/e01/src/lib.rs', lines 47:0-53:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
 def
   __anodized_fn_ensures_f_loop.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
   (c : __anodized_fn_ensures_f_loop.closure) (tupled_args : Std.U8) :
@@ -739,7 +739,7 @@ def
   ok b
 
 /-- [e01::__anodized_fn_ensures_f_loop::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure<'_0>}::call_mut]:
-    Source: 'examples/e01/src/lib.rs', lines 47:0-53:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
 def
   __anodized_fn_ensures_f_loop.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut
   (state : __anodized_fn_ensures_f_loop.closure) (args : Std.U8) :
@@ -751,7 +751,7 @@ def
   ok (b, state)
 
 /-- [e01::__anodized_fn_ensures_f_loop::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure<'_0>}::call_once]:
-    Source: 'examples/e01/src/lib.rs', lines 47:0-53:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
 def
   __anodized_fn_ensures_f_loop.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool.call_once
   (c : __anodized_fn_ensures_f_loop.closure) (i : Std.U8) : Result Bool := do
@@ -761,7 +761,7 @@ def
   ok b
 
 /-- Trait implementation: [e01::__anodized_fn_ensures_f_loop::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure<'_0>}]
-    Source: 'examples/e01/src/lib.rs', lines 47:0-53:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
 @[reducible]
 def
   __anodized_fn_ensures_f_loop.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool
@@ -772,7 +772,7 @@ def
 }
 
 /-- Trait implementation: [e01::__anodized_fn_ensures_f_loop::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure<'_0>}]
-    Source: 'examples/e01/src/lib.rs', lines 47:0-53:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
 @[reducible]
 def
   __anodized_fn_ensures_f_loop.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool
@@ -785,7 +785,7 @@ def
 }
 
 /-- Trait implementation: [e01::__anodized_fn_ensures_f_loop::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure<'_0>}]
-    Source: 'examples/e01/src/lib.rs', lines 47:0-53:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
 @[reducible]
 def
   __anodized_fn_ensures_f_loop.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool
@@ -796,25 +796,101 @@ def
     __anodized_fn_ensures_f_loop.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
 }
 
+/-- [e01::__anodized_fn_ensures_f_loop::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure#1<'_0>}::call]:
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
+def
+  __anodized_fn_ensures_f_loop.closure_1.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
+  (c : __anodized_fn_ensures_f_loop.closure_1) (tupled_args : Std.U8) :
+  Result Bool
+  := do
+  let b ← core.slice.Slice.contains core.cmp.PartialEqU8 c tupled_args
+  let i := Slice.len c
+  ok (b = (i > 0#usize))
+
+/-- [e01::__anodized_fn_ensures_f_loop::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure#1<'_0>}::call_mut]:
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
+def
+  __anodized_fn_ensures_f_loop.closure_1.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut
+  (state : __anodized_fn_ensures_f_loop.closure_1) (args : Std.U8) :
+  Result (Bool × __anodized_fn_ensures_f_loop.closure_1)
+  := do
+  let b ←
+    __anodized_fn_ensures_f_loop.closure_1.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
+      state args
+  ok (b, state)
+
+/-- [e01::__anodized_fn_ensures_f_loop::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure#1<'_0>}::call_once]:
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
+def
+  __anodized_fn_ensures_f_loop.closure_1.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool.call_once
+  (c : __anodized_fn_ensures_f_loop.closure_1) (i : Std.U8) : Result Bool := do
+  let (b, _) ←
+    __anodized_fn_ensures_f_loop.closure_1.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut
+      c i
+  ok b
+
+/-- Trait implementation: [e01::__anodized_fn_ensures_f_loop::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure#1<'_0>}]
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
+@[reducible]
+def
+  __anodized_fn_ensures_f_loop.closure_1.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool
+  : core.ops.function.FnOnce __anodized_fn_ensures_f_loop.closure_1 Std.U8 Bool
+  := {
+  call_once :=
+    __anodized_fn_ensures_f_loop.closure_1.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool.call_once
+}
+
+/-- Trait implementation: [e01::__anodized_fn_ensures_f_loop::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure#1<'_0>}]
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
+@[reducible]
+def
+  __anodized_fn_ensures_f_loop.closure_1.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool
+  : core.ops.function.FnMut __anodized_fn_ensures_f_loop.closure_1 Std.U8 Bool
+  := {
+  FnOnceInst :=
+    __anodized_fn_ensures_f_loop.closure_1.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool
+  call_mut :=
+    __anodized_fn_ensures_f_loop.closure_1.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut
+}
+
+/-- Trait implementation: [e01::__anodized_fn_ensures_f_loop::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_loop::closure#1<'_0>}]
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
+@[reducible]
+def
+  __anodized_fn_ensures_f_loop.closure_1.Insts.CoreOpsFunctionFnTupleSharedU8Bool
+  : core.ops.function.Fn __anodized_fn_ensures_f_loop.closure_1 Std.U8 Bool
+  := {
+  FnMutInst :=
+    __anodized_fn_ensures_f_loop.closure_1.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool
+  call :=
+    __anodized_fn_ensures_f_loop.closure_1.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
+}
+
 /-- [e01::__anodized_fn_requires_f_loop]:
-    Source: 'examples/e01/src/lib.rs', lines 47:0-53:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
 def __anodized_fn_requires_f_loop (x : Slice Std.U8) : Result Bool := do
   ok true
 
 /-- [e01::__anodized_fn_ensures_f_loop]:
-    Source: 'examples/e01/src/lib.rs', lines 47:0-53:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
 def __anodized_fn_ensures_f_loop
   (x : Slice Std.U8) (__anodized_output : Std.U8) : Result Bool := do
-  __anodized_fn_ensures_f_loop.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
-    x __anodized_output
+  let b ←
+    __anodized_fn_ensures_f_loop.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
+      x __anodized_output
+  if b
+  then
+    __anodized_fn_ensures_f_loop.closure_1.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
+      x __anodized_output
+  else ok false
 
 /-- [e01::__anodized_fn_qualifiers_f_loop]
-    Source: 'examples/e01/src/lib.rs', lines 47:0-53:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 50:0-55:2 -/
 @[global_simps, irreducible]
 def __anodized_fn_qualifiers_f_loop : Std.U32 := 0#u32
 
 /-- [e01::f_loop]: loop body 0:
-    Source: 'examples/e01/src/lib.rs', lines 59:4-63:5
+    Source: 'examples/e01/src/lib.rs', lines 61:4-65:5
     Visibility: public -/
 @[rust_loop_body]
 def f_loop_loop.body
@@ -832,7 +908,7 @@ def f_loop_loop.body
     else ok (cont (iter1, max))
 
 /-- [e01::f_loop]: loop 0:
-    Source: 'examples/e01/src/lib.rs', lines 59:4-63:5
+    Source: 'examples/e01/src/lib.rs', lines 61:4-65:5
     Visibility: public -/
 @[rust_loop]
 def f_loop_loop
@@ -844,14 +920,14 @@ def f_loop_loop
     (iter, max)
 
 /-- [e01::f_loop]:
-    Source: 'examples/e01/src/lib.rs', lines 54:0-65:1
+    Source: 'examples/e01/src/lib.rs', lines 56:0-67:1
     Visibility: public -/
 def f_loop (x : Slice Std.U8) : Result Std.U8 := do
   let i := Slice.len x
   f_loop_loop { start := 0#usize, «end» := i } x 0#u8
 
 /-- [e01::__anodized_fn_ensures_f_while::closure::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure::closure<'_0>}::call_mut]:
-    Source: 'examples/e01/src/lib.rs', lines 72:21-72:42 -/
+    Source: 'examples/e01/src/lib.rs', lines 73:21-73:42 -/
 def
   __anodized_fn_ensures_f_while.closure.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut
   (c : __anodized_fn_ensures_f_while.closure.closure) (tupled_args : Std.U8) :
@@ -863,7 +939,7 @@ def
   ok (b, c)
 
 /-- [e01::__anodized_fn_ensures_f_while::closure::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure::closure<'_0>}::call_once]:
-    Source: 'examples/e01/src/lib.rs', lines 72:21-72:42 -/
+    Source: 'examples/e01/src/lib.rs', lines 73:21-73:42 -/
 def
   __anodized_fn_ensures_f_while.closure.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool.call_once
   (c : __anodized_fn_ensures_f_while.closure.closure) (i : Std.U8) :
@@ -875,7 +951,7 @@ def
   ok b
 
 /-- Trait implementation: [e01::__anodized_fn_ensures_f_while::closure::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure::closure<'_0>}]
-    Source: 'examples/e01/src/lib.rs', lines 72:21-72:42 -/
+    Source: 'examples/e01/src/lib.rs', lines 73:21-73:42 -/
 @[reducible]
 def
   __anodized_fn_ensures_f_while.closure.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool
@@ -886,7 +962,7 @@ def
 }
 
 /-- Trait implementation: [e01::__anodized_fn_ensures_f_while::closure::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure::closure<'_0>}]
-    Source: 'examples/e01/src/lib.rs', lines 72:21-72:42 -/
+    Source: 'examples/e01/src/lib.rs', lines 73:21-73:42 -/
 @[reducible]
 def
   __anodized_fn_ensures_f_while.closure.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool
@@ -899,7 +975,7 @@ def
 }
 
 /-- [e01::__anodized_fn_ensures_f_while::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure<'_0>}::call]:
-    Source: 'examples/e01/src/lib.rs', lines 69:0-75:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
 def
   __anodized_fn_ensures_f_while.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
   (c : __anodized_fn_ensures_f_while.closure) (tupled_args : Std.U8) :
@@ -913,7 +989,7 @@ def
   ok b
 
 /-- [e01::__anodized_fn_ensures_f_while::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure<'_0>}::call_mut]:
-    Source: 'examples/e01/src/lib.rs', lines 69:0-75:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
 def
   __anodized_fn_ensures_f_while.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut
   (state : __anodized_fn_ensures_f_while.closure) (args : Std.U8) :
@@ -925,7 +1001,7 @@ def
   ok (b, state)
 
 /-- [e01::__anodized_fn_ensures_f_while::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure<'_0>}::call_once]:
-    Source: 'examples/e01/src/lib.rs', lines 69:0-75:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
 def
   __anodized_fn_ensures_f_while.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool.call_once
   (c : __anodized_fn_ensures_f_while.closure) (i : Std.U8) : Result Bool := do
@@ -935,7 +1011,7 @@ def
   ok b
 
 /-- Trait implementation: [e01::__anodized_fn_ensures_f_while::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure<'_0>}]
-    Source: 'examples/e01/src/lib.rs', lines 69:0-75:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
 @[reducible]
 def
   __anodized_fn_ensures_f_while.closure.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool
@@ -946,7 +1022,7 @@ def
 }
 
 /-- Trait implementation: [e01::__anodized_fn_ensures_f_while::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure<'_0>}]
-    Source: 'examples/e01/src/lib.rs', lines 69:0-75:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
 @[reducible]
 def
   __anodized_fn_ensures_f_while.closure.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool
@@ -959,7 +1035,7 @@ def
 }
 
 /-- Trait implementation: [e01::__anodized_fn_ensures_f_while::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure<'_0>}]
-    Source: 'examples/e01/src/lib.rs', lines 69:0-75:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
 @[reducible]
 def
   __anodized_fn_ensures_f_while.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool
@@ -970,25 +1046,103 @@ def
     __anodized_fn_ensures_f_while.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
 }
 
+/-- [e01::__anodized_fn_ensures_f_while::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure#1<'_0>}::call]:
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
+def
+  __anodized_fn_ensures_f_while.closure_1.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
+  (c : __anodized_fn_ensures_f_while.closure_1) (tupled_args : Std.U8) :
+  Result Bool
+  := do
+  let b ← core.slice.Slice.contains core.cmp.PartialEqU8 c tupled_args
+  let i := Slice.len c
+  ok (b = (i > 0#usize))
+
+/-- [e01::__anodized_fn_ensures_f_while::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure#1<'_0>}::call_mut]:
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
+def
+  __anodized_fn_ensures_f_while.closure_1.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut
+  (state : __anodized_fn_ensures_f_while.closure_1) (args : Std.U8) :
+  Result (Bool × __anodized_fn_ensures_f_while.closure_1)
+  := do
+  let b ←
+    __anodized_fn_ensures_f_while.closure_1.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
+      state args
+  ok (b, state)
+
+/-- [e01::__anodized_fn_ensures_f_while::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure#1<'_0>}::call_once]:
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
+def
+  __anodized_fn_ensures_f_while.closure_1.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool.call_once
+  (c : __anodized_fn_ensures_f_while.closure_1) (i : Std.U8) :
+  Result Bool
+  := do
+  let (b, _) ←
+    __anodized_fn_ensures_f_while.closure_1.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut
+      c i
+  ok b
+
+/-- Trait implementation: [e01::__anodized_fn_ensures_f_while::{impl core::ops::function::FnOnce<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure#1<'_0>}]
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
+@[reducible]
+def
+  __anodized_fn_ensures_f_while.closure_1.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool
+  : core.ops.function.FnOnce __anodized_fn_ensures_f_while.closure_1 Std.U8
+  Bool := {
+  call_once :=
+    __anodized_fn_ensures_f_while.closure_1.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool.call_once
+}
+
+/-- Trait implementation: [e01::__anodized_fn_ensures_f_while::{impl core::ops::function::FnMut<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure#1<'_0>}]
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
+@[reducible]
+def
+  __anodized_fn_ensures_f_while.closure_1.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool
+  : core.ops.function.FnMut __anodized_fn_ensures_f_while.closure_1 Std.U8 Bool
+  := {
+  FnOnceInst :=
+    __anodized_fn_ensures_f_while.closure_1.Insts.CoreOpsFunctionFnOnceTupleSharedU8Bool
+  call_mut :=
+    __anodized_fn_ensures_f_while.closure_1.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool.call_mut
+}
+
+/-- Trait implementation: [e01::__anodized_fn_ensures_f_while::{impl core::ops::function::Fn<(&'_ u8,), bool> for e01::__anodized_fn_ensures_f_while::closure#1<'_0>}]
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
+@[reducible]
+def
+  __anodized_fn_ensures_f_while.closure_1.Insts.CoreOpsFunctionFnTupleSharedU8Bool
+  : core.ops.function.Fn __anodized_fn_ensures_f_while.closure_1 Std.U8 Bool
+  := {
+  FnMutInst :=
+    __anodized_fn_ensures_f_while.closure_1.Insts.CoreOpsFunctionFnMutTupleSharedU8Bool
+  call :=
+    __anodized_fn_ensures_f_while.closure_1.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
+}
+
 /-- [e01::__anodized_fn_requires_f_while]:
-    Source: 'examples/e01/src/lib.rs', lines 69:0-75:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
 def __anodized_fn_requires_f_while (x : Slice Std.U8) : Result Bool := do
   ok true
 
 /-- [e01::__anodized_fn_ensures_f_while]:
-    Source: 'examples/e01/src/lib.rs', lines 69:0-75:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
 def __anodized_fn_ensures_f_while
   (x : Slice Std.U8) (__anodized_output : Std.U8) : Result Bool := do
-  __anodized_fn_ensures_f_while.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
-    x __anodized_output
+  let b ←
+    __anodized_fn_ensures_f_while.closure.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
+      x __anodized_output
+  if b
+  then
+    __anodized_fn_ensures_f_while.closure_1.Insts.CoreOpsFunctionFnTupleSharedU8Bool.call
+      x __anodized_output
+  else ok false
 
 /-- [e01::__anodized_fn_qualifiers_f_while]
-    Source: 'examples/e01/src/lib.rs', lines 69:0-75:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 71:0-76:2 -/
 @[global_simps, irreducible]
 def __anodized_fn_qualifiers_f_while : Std.U32 := 0#u32
 
 /-- [e01::f_while]: loop body 0:
-    Source: 'examples/e01/src/lib.rs', lines 86:4-91:5
+    Source: 'examples/e01/src/lib.rs', lines 87:4-92:5
     Visibility: public -/
 @[rust_loop_body]
 def f_while_loop.body
@@ -1007,7 +1161,7 @@ def f_while_loop.body
   else ok (done max)
 
 /-- [e01::f_while]: loop 0:
-    Source: 'examples/e01/src/lib.rs', lines 86:4-91:5
+    Source: 'examples/e01/src/lib.rs', lines 87:4-92:5
     Visibility: public -/
 @[rust_loop]
 def f_while_loop
@@ -1017,20 +1171,20 @@ def f_while_loop
     (max, i)
 
 /-- [e01::f_while]:
-    Source: 'examples/e01/src/lib.rs', lines 76:0-93:1
+    Source: 'examples/e01/src/lib.rs', lines 77:0-94:1
     Visibility: public -/
 @[reducible]
 def f_while (x : Slice Std.U8) : Result Std.U8 := do
   f_while_loop x 0#u8 0#usize
 
 /-- [e01::{e01::S}::__anodized_data_maintains::{impl core::ops::function::Fn<(), bool> for e01::{e01::S}::__anodized_data_maintains::closure<'_0>}::call]:
-    Source: 'examples/e01/src/lib.rs', lines 97:0-99:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 98:0-100:2 -/
 def S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnTupleBool.call
   (c : S.__anodized_data_maintains.closure) (_ : Unit) : Result Bool := do
   ok (c.x > 0#u8)
 
 /-- [e01::{e01::S}::__anodized_data_maintains::{impl core::ops::function::FnMut<(), bool> for e01::{e01::S}::__anodized_data_maintains::closure<'_0>}::call_mut]:
-    Source: 'examples/e01/src/lib.rs', lines 97:0-99:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 98:0-100:2 -/
 def
   S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnMutTupleBool.call_mut
   (state : S.__anodized_data_maintains.closure) (_ : Unit) :
@@ -1042,7 +1196,7 @@ def
   ok (b, state)
 
 /-- [e01::{e01::S}::__anodized_data_maintains::{impl core::ops::function::FnOnce<(), bool> for e01::{e01::S}::__anodized_data_maintains::closure<'_0>}::call_once]:
-    Source: 'examples/e01/src/lib.rs', lines 97:0-99:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 98:0-100:2 -/
 def
   S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnOnceTupleBool.call_once
   (c : S.__anodized_data_maintains.closure) (_ : Unit) : Result Bool := do
@@ -1052,7 +1206,7 @@ def
   ok b
 
 /-- Trait implementation: [e01::{e01::S}::__anodized_data_maintains::{impl core::ops::function::FnOnce<(), bool> for e01::{e01::S}::__anodized_data_maintains::closure<'_0>}]
-    Source: 'examples/e01/src/lib.rs', lines 97:0-99:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 98:0-100:2 -/
 @[reducible]
 def S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnOnceTupleBool :
   core.ops.function.FnOnce S.__anodized_data_maintains.closure Unit Bool := {
@@ -1061,7 +1215,7 @@ def S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnOnceTupleBool :
 }
 
 /-- Trait implementation: [e01::{e01::S}::__anodized_data_maintains::{impl core::ops::function::FnMut<(), bool> for e01::{e01::S}::__anodized_data_maintains::closure<'_0>}]
-    Source: 'examples/e01/src/lib.rs', lines 97:0-99:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 98:0-100:2 -/
 @[reducible]
 def S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnMutTupleBool :
   core.ops.function.FnMut S.__anodized_data_maintains.closure Unit Bool := {
@@ -1072,7 +1226,7 @@ def S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnMutTupleBool :
 }
 
 /-- Trait implementation: [e01::{e01::S}::__anodized_data_maintains::{impl core::ops::function::Fn<(), bool> for e01::{e01::S}::__anodized_data_maintains::closure<'_0>}]
-    Source: 'examples/e01/src/lib.rs', lines 97:0-99:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 98:0-100:2 -/
 @[reducible]
 def S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnTupleBool :
   core.ops.function.Fn S.__anodized_data_maintains.closure Unit Bool := {
@@ -1083,7 +1237,7 @@ def S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnTupleBool :
 }
 
 /-- [e01::{e01::S}::__anodized_data_maintains]:
-    Source: 'examples/e01/src/lib.rs', lines 97:0-99:2 -/
+    Source: 'examples/e01/src/lib.rs', lines 98:0-100:2 -/
 def S.__anodized_data_maintains (self : S) : Result Bool := do
   S.__anodized_data_maintains.closure.Insts.CoreOpsFunctionFnTupleBool.call
     self ()

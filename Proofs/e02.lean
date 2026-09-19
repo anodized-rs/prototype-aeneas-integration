@@ -1,5 +1,5 @@
 import examples.e02.translation.Funs
-import Proofs.Anodized
+import Anodized
 import Proofs.IntExternal
 
 open Aeneas Std.Result
@@ -22,6 +22,7 @@ These functions operate on `u8`, but their `#[spec]` clauses are written with `i
 through `step*` plus the `@[step]` `int` specs in `Proofs.IntExternal`; `eq_ok_iff` turns the
 monadic `… = ok true` (pre)conditions into `⦃ ⦄` triples that `step*` can run. -/
 
+@[step]
 theorem decrement_spec : Anodized decrement := by
   intro x hx
   simp only [step_simps] at hx
@@ -34,7 +35,7 @@ theorem decrement_spec : Anodized decrement := by
 theorem requires_add_spec' {x y : Std.U8} :
     __anodized_fn_requires_add x y = ok true ↔ x.val + y.val ≤ 255 := by
   have hk : __anodized_fn_requires_add x y = ok (decide ((x.val : Int) + y.val ≤ 255)) := by
-    rw [eq_ok_iff]; step*; simp_all
+    rw [eq_ok_iff]; step*
   rw [hk]; simp only [Std.Result.ok.injEq, decide_eq_true_eq]; omega
 
 theorem ensures_add_spec' {x y out : Std.U8} :
@@ -43,6 +44,7 @@ theorem ensures_add_spec' {x y out : Std.U8} :
     rw [eq_ok_iff]; step*; simp_all
   rw [hk]; simp only [Std.Result.ok.injEq, decide_eq_true_eq]; omega
 
+@[step]
 theorem add_spec : Anodized add := by
   intro x y h
   rw [requires_add_spec'] at h -- precondition ↦ no-overflow bound
@@ -50,6 +52,7 @@ theorem add_spec : Anodized add := by
   unfold add
   step*
 
+@[step]
 theorem sub_spec : Anodized sub := by
   intro x y h
   have hbound : (y.val : Int) ≤ x.val := by
