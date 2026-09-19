@@ -46,9 +46,8 @@ impl T for u8 {
 
 #[spec(
     ensures: [
-        // If this doesn't work with Aeneas, try the one below.
         x.iter().all(|item| item <= output),
-        //(0..x.len()).all(|j| x[j] <= *output),
+        x.contains(output) == (x.len() > 0),
     ],
 )]
 pub fn f_loop(x: &[u8]) -> u8 {
@@ -68,9 +67,8 @@ pub fn f_loop(x: &[u8]) -> u8 {
 
 #[spec(
     ensures: [
-        // If this doesn't work with Aeneas, try the one below.
         x.iter().all(|item| item <= output),
-        //(0..x.len()).all(|j| x[j] <= *output),
+        x.contains(output) == (x.len() > 0),
     ],
 )]
 pub fn f_while(x: &[u8]) -> u8 {

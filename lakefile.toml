@@ -1,5 +1,5 @@
 name = "AeneasIntegration"
-defaultTargets = ["examples"]
+defaultTargets = ["examples", "Proofs"]
 
 [leanOptions]
 linter.style.nameCheck = false
@@ -10,6 +10,9 @@ name = "aeneas"
 git = "https://github.com/AeneasVerif/aeneas.git"
 subDir = "backends/lean"
 rev = "nightly-2026.08.31-379890b"
+
+[[lean_lib]]
+name = "Anodized"
 
 [[lean_lib]]
 name = "examples"
