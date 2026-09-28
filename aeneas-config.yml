@@ -3,5 +3,5 @@
 # `tag` is a GitHub release tag on the aeneas repo.
 # The `rev` in lakefile.toml's aeneas block must be the same as this.
 aeneas:
-  tag: "nightly-2026.08.31-379890b"
+  tag: "nightly-2026.09.28-b86120d"
   repo: "https://github.com/AeneasVerif/aeneas.git"
