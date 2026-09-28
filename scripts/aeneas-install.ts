@@ -140,6 +140,37 @@ async function downloadAndExtract(url: string, aeneasDir: string): Promise<void>
   spinner.succeed("Downloaded and extracted");
 }
 
+/**
+ * The macOS release is built with Nix, and the bundled Charon can retain an absolute
+ * Nix-store path for libiconv. That path is unavailable on ordinary macOS installs,
+ * where the compatible library is provided by the system.
+ */
+async function fixDarwinCharonLibiconv(aeneasDir: string): Promise<void> {
+  if (process.platform !== "darwin") return;
+
+  const charonBin = path.join(aeneasDir, "charon");
+  if (!fs.existsSync(charonBin)) return;
+
+  const linkedLibraries = await run("otool", ["-L", charonBin], { silent: true });
+  const nixLibiconv = linkedLibraries
+    .split("\n")
+    .map((line) => line.trim().split(/\s+\(compatibility version/)[0])
+    .find((library) => library.startsWith("/nix/store/") && path.basename(library).startsWith("libiconv"));
+
+  if (!nixLibiconv) return;
+
+  await run(
+    "install_name_tool",
+    ["-change", nixLibiconv, "/usr/lib/libiconv.2.dylib", charonBin],
+    { silent: true },
+  );
+
+  const patchedLibraries = await run("otool", ["-L", charonBin], { silent: true });
+  if (patchedLibraries.includes(nixLibiconv)) {
+    throw new Error(`Could not replace Charon's unavailable libiconv dependency: ${nixLibiconv}`);
+  }
+}
+
 // ── Main ──────────────────────────────────────────────────────────────
 
 async function main(): Promise<void> {
@@ -152,6 +183,7 @@ async function main(): Promise<void> {
   // Check if already installed at the correct release
   const installed = await getInstalledTag(root);
   if (installed === tag && findBinary("charon", root)) {
+    await fixDarwinCharonLibiconv(aeneasDir);
     console.log(chalk.green(`Already up to date (${tag}). Skipping.`));
     return;
   }
@@ -163,6 +195,8 @@ async function main(): Promise<void> {
 
   console.log(chalk.bold(`\nDownloading ${tag} (${asset})...`));
   await downloadAndExtract(url, aeneasDir);
+
+  await fixDarwinCharonLibiconv(aeneasDir);
 
   await setupRustToolchain(aeneasDir);
 
