@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install TypeScript dependencies
+        run: npm ci
+
+      - name: Install Aeneas and Charon
+        run: npm run aeneas-install
+
+      - name: Extract examples
+        run: npm run translate-all
+
+      - name: Set up Lean without restoring a project build cache
+        uses: leanprover/lean-action@v1
+        with:
+          build: false
+          test: false
+          lint: false
+          mk_all-check: false
+          use-github-cache: false
+          use-mathlib-cache: true
+
+      - name: Build and check Lean targets
+        run: lake build
